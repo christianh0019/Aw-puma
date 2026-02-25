@@ -79,7 +79,7 @@ export const BlogPost: React.FC = () => {
                                 </Button>
                             </Link>
                             <a href="tel:6176183366">
-                                <Button variant="outline-white" size="lg" className="w-full sm:w-auto">
+                                <Button variant="outline-white" size="lg" className="w-full sm:w-auto text-white">
                                     Call (617) 618-3366
                                 </Button>
                             </a>

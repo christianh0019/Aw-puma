@@ -110,7 +110,7 @@ export const Blog: React.FC = () => {
                 </div>
 
                 {/* Newsletter Signup */}
-                <div className="mt-24 bg-brand-navy rounded-sm p-8 md:p-12 text-center text-white">
+                <div className="mt-24 bg-brand-navy rounded-2xl p-8 md:p-12 text-center text-white">
                     <h2 className="text-3xl font-serif font-bold mb-4">Subscribe to Our Insights</h2>
                     <p className="text-gray-300 mb-8 max-w-xl mx-auto">
                         Get the latest home maintenance tips and exclusive local rebates delivered to your inbox once a month.
