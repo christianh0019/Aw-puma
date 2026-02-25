@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <img src="/images/logos/shield-logo-white.png" alt="A.W. Puma" className="h-20 w-auto object-contain" />
+              <img src="/images/logos/text-logo-white.png" alt="A.W. Puma" className="h-16 w-auto object-contain" />
             </div>
             <p className="mb-6 leading-relaxed">
               Premium home services and climate control for discerning homeowners in Massachusetts. Quality you can trust, built to last.
