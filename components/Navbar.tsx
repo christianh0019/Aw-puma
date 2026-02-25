@@ -175,6 +175,9 @@ export const Navbar: React.FC = () => {
                 </div>
               </div>
 
+              <Link to="/mass-save" className="text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors px-4 py-2 rounded-md">
+                Mass Save®
+              </Link>
               <Link to="/about" className="text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors px-4 py-2 rounded-md">
                 About
               </Link>
@@ -318,6 +321,9 @@ export const Navbar: React.FC = () => {
               )}
             </div>
 
+            <Link to="/mass-save" className="block py-3 text-lg font-bold text-brand-navy hover:text-brand-orange border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>
+              Mass Save®
+            </Link>
             <Link to="/about" className="block py-3 text-lg font-bold text-brand-navy hover:text-brand-orange border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>
               About
             </Link>
