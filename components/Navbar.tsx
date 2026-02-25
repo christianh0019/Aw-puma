@@ -36,15 +36,7 @@ export const Navbar: React.FC = () => {
     return () => { document.body.style.overflow = ''; };
   }, [mobileMenuOpen]);
 
-  const locationLinks = [
-    { name: 'Brookline, MA', href: '/locations/norfolk', description: 'Your local Brookline service experts' },
-    { name: 'Newton, MA', href: '/locations/newton', description: 'Our primary service hub in Newton Centre' },
-    { name: 'Boston, MA', href: '/locations/city/boston', description: 'Full-service heating & cooling in the Hub' },
-    { name: 'Worcester, MA', href: '/locations/city/worcester', description: 'Expert home services in Central MA' },
-    { name: 'Cambridge, MA', href: '/locations/city/cambridge', description: 'Smart home solutions in Cambridge' },
-    { name: 'Brockton, MA', href: '/locations/city/brockton', description: 'Champion-level service in Brockton' },
-    { name: 'Lowell, MA', href: '/locations/city/lowell', description: 'Prompt home services in Lowell' },
-  ];
+
 
   return (
     <>
@@ -131,49 +123,9 @@ export const Navbar: React.FC = () => {
                 </div>
               </div>
 
-              {/* Locations with Mega Menu */}
-              <div className="relative group">
-                <Link
-                  to="/locations"
-                  className="flex items-center gap-1 text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors px-4 py-2 rounded-md"
-                >
-                  Locations
-                  <ChevronDown size={14} className="group-hover:rotate-180 transition-transform" />
-                </Link>
-
-                {/* Locations Mega Menu Dropdown */}
-                <div className="absolute top-full left-1/2 -translate-x-1/2 w-[680px] bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 border border-gray-100 overflow-hidden">
-                  <div className="grid grid-cols-2 gap-1 p-4">
-                    {locationLinks.map((loc) => (
-                      <Link
-                        key={loc.name}
-                        to={loc.href}
-                        className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all duration-200 group/item"
-                      >
-                        <div className="w-11 h-11 rounded-lg bg-brand-orange/10 flex items-center justify-center flex-shrink-0 group-hover/item:scale-110 transition-transform duration-200">
-                          <MapPin size={22} className="text-brand-orange" />
-                        </div>
-                        <div>
-                          <div className="font-bold text-brand-navy text-sm group-hover/item:text-brand-orange transition-colors">
-                            {loc.name}
-                          </div>
-                          <div className="text-xs text-brand-gray-light mt-0.5 leading-relaxed">
-                            {loc.description}
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-
-                  {/* Mega Menu Footer */}
-                  <div className="bg-gray-50 px-6 py-3 border-t border-gray-100 flex items-center justify-between">
-                    <span className="text-xs text-brand-gray-light">Don't see your area?</span>
-                    <Link to="/contact" className="inline-flex items-center text-brand-orange font-bold text-xs uppercase tracking-wide hover:underline">
-                      Check Your Coverage <ArrowRight size={12} className="ml-1" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              <Link to="/locations" className="text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors px-4 py-2 rounded-md">
+                Locations
+              </Link>
 
               <Link to="/mass-save" className="text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors px-4 py-2 rounded-md">
                 Mass Save®
@@ -280,46 +232,9 @@ export const Navbar: React.FC = () => {
               )}
             </div>
 
-            {/* Locations Accordion */}
-            <div className="border-b border-gray-100">
-              <div className="flex items-center justify-between py-3">
-                <span className="text-lg font-bold text-brand-navy">Locations</span>
-                <button
-                  onClick={() => setActiveDropdown(activeDropdown === 'locations' ? null : 'locations')}
-                  className="p-2 text-brand-gray"
-                  aria-label="Expand Locations"
-                >
-                  <ChevronDown size={20} className={`transform transition-transform ${activeDropdown === 'locations' ? 'rotate-180' : ''}`} />
-                </button>
-              </div>
-              {activeDropdown === 'locations' && (
-                <div className="pb-3 space-y-1">
-                  {locationLinks.map((loc) => (
-                    <Link
-                      key={loc.name}
-                      to={loc.href}
-                      className="flex items-center gap-3 px-2 py-2.5 rounded-lg hover:bg-gray-50 transition-colors"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      <div className="w-9 h-9 rounded-lg bg-brand-orange/10 flex items-center justify-center flex-shrink-0">
-                        <MapPin size={18} className="text-brand-orange" />
-                      </div>
-                      <div>
-                        <div className="font-semibold text-brand-navy text-sm">{loc.name}</div>
-                        <div className="text-xs text-brand-gray-light">{loc.description}</div>
-                      </div>
-                    </Link>
-                  ))}
-                  <Link
-                    to="/locations"
-                    className="flex items-center gap-2 px-2 py-2.5 text-brand-orange font-bold text-sm hover:underline"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    View All Areas <ArrowRight size={14} />
-                  </Link>
-                </div>
-              )}
-            </div>
+            <Link to="/locations" className="block py-3 text-lg font-bold text-brand-navy hover:text-brand-orange border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>
+              Locations
+            </Link>
 
             <Link to="/mass-save" className="block py-3 text-lg font-bold text-brand-navy hover:text-brand-orange border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>
               Mass Save®

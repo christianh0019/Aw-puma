@@ -96,8 +96,8 @@ export const MassSave: React.FC = () => {
 
             {/* Why Choose Us */}
             <section className="py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="max-w-4xl mx-auto px-4">
+                    <div className="items-center">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">Why Should You Choose Us?</h2>
                             <p className="text-lg text-brand-gray leading-relaxed mb-8">
@@ -133,17 +133,6 @@ export const MassSave: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="relative">
-                            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative z-10">
-                                <img
-                                    src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2669&auto=format&fit=crop"
-                                    alt="Energy Efficient Home"
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div className="absolute top-1/2 -right-8 -translate-y-1/2 w-64 h-64 bg-brand-gold/20 rounded-full blur-3xl -z-10" />
-                            <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-brand-navy/10 rounded-full blur-2xl -z-10" />
                         </div>
                     </div>
                 </div>
