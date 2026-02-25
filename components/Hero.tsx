@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
           {/* Left: Copy */}
-          <div className="text-left order-2 lg:order-1">
+          <div className="text-left order-1">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 mb-8">
               <div className="flex -space-x-0.5">
@@ -38,14 +38,14 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-[1.1]">
-              Home Services <br />
-              <span className="text-brand-orange">Done Right</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold tracking-tight text-white mb-6 leading-[1.1]">
+              HVAC, Plumbing, and Electrical Services <br className="hidden md:block" />
+              <span className="text-brand-orange">in Massachusetts</span>
             </h1>
 
             {/* Tagline */}
             <p className="text-lg sm:text-xl text-gray-300 mb-4 font-serif italic">
-              Always There. Always Fair.
+              "Always There. Always Fair."
             </p>
 
             {/* Sub-headline */}
@@ -102,7 +102,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Right: Mascot + Service Badges */}
-          <div className="relative flex items-center justify-center order-1 lg:order-2">
+          <div className="relative flex items-center justify-center order-2">
 
             {/* Mascot glow backdrop */}
             <div className="absolute inset-0 flex items-center justify-center">

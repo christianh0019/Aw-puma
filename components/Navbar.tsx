@@ -80,7 +80,7 @@ export const Navbar: React.FC = () => {
               <img
                 src="/images/logos/text-logo-color.png"
                 alt="A.W. Puma Home Services"
-                className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-12'}`}
+                className={`transition-all duration-300 ${isScrolled ? 'h-12' : 'h-16'}`}
               />
             </Link>
 
@@ -201,8 +201,11 @@ export const Navbar: React.FC = () => {
               </Link>
             </div>
 
-            {/* Mobile Toggle */}
-            <div className="lg:hidden">
+            {/* Mobile Toggle & Phone */}
+            <div className="lg:hidden flex items-center gap-2">
+              <a href="tel:6176183366" className="text-brand-navy p-2 hover:bg-gray-100 rounded-md transition-colors" aria-label="Call Us">
+                <Phone size={24} />
+              </a>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="text-brand-navy p-2 hover:bg-gray-100 rounded-md transition-colors"
@@ -226,7 +229,7 @@ export const Navbar: React.FC = () => {
               <img
                 src="/images/logos/text-logo-color.png"
                 alt="A.W. Puma Home Services"
-                className="h-10"
+                className="h-12"
               />
             </Link>
             <button
