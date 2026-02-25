@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Star, ShieldCheck, Clock, Phone, Snowflake, Flame, Wrench } from 'lucide-react';
+import { ArrowRight, Star, ShieldCheck, Clock, Phone, Snowflake, Flame, Wrench, Zap } from 'lucide-react';
 import { Button } from './ui/Button';
 import { Link } from 'react-router-dom';
 
@@ -119,10 +119,10 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Floating service badges */}
-            <div className="absolute top-8 right-4 lg:top-12 lg:right-0 bg-white/10 backdrop-blur-md rounded-xl px-4 py-3 border border-white/10 shadow-lg animate-float" style={{ animationDelay: '1s' }}>
+            <div className="absolute top-8 right-2 lg:top-12 lg:right-0 bg-white/10 backdrop-blur-md rounded-xl px-4 py-3 border border-white/10 shadow-lg animate-float" style={{ animationDelay: '1s' }}>
               <div className="flex items-center gap-2">
                 <Snowflake size={18} className="text-blue-300" />
-                <span className="text-white text-sm font-semibold">Heating</span>
+                <span className="text-white text-sm font-semibold">Cooling</span>
               </div>
             </div>
 
@@ -135,8 +135,15 @@ export const Hero: React.FC = () => {
 
             <div className="absolute bottom-4 right-8 lg:bottom-8 lg:right-8 bg-white/10 backdrop-blur-md rounded-xl px-4 py-3 border border-white/10 shadow-lg animate-float" style={{ animationDelay: '3s' }}>
               <div className="flex items-center gap-2">
-                <Wrench size={18} className="text-green-300" />
-                <span className="text-white text-sm font-semibold">Cooling</span>
+                <Wrench size={18} className="text-gray-300" />
+                <span className="text-white text-sm font-semibold">Plumbing</span>
+              </div>
+            </div>
+
+            <div className="absolute top-1/2 -right-6 sm:-right-8 lg:-right-12 bg-white/10 backdrop-blur-md rounded-xl px-4 py-3 border border-white/10 shadow-lg animate-float" style={{ animationDelay: '4s' }}>
+              <div className="flex items-center gap-2">
+                <Zap size={18} className="text-yellow-400" />
+                <span className="text-white text-sm font-semibold">Electrical</span>
               </div>
             </div>
           </div>

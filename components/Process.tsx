@@ -61,9 +61,58 @@ export const Process: React.FC = () => {
         </div>
 
         {/* Guarantee Box */}
-        <div className="mt-20 bg-white/5 border border-white/10 rounded-xl p-8 max-w-4xl mx-auto text-center backdrop-blur-sm">
-          <h4 className="text-2xl font-serif font-bold text-white mb-2">The A.W. Puma Guarantee</h4>
-          <p className="text-gray-300">Your satisfaction is our reputation. Every job comes with our service guarantee — if it's not right, we make it right.</p>
+        <div className="mt-20 bg-white/5 border border-brand-orange/20 rounded-xl p-8 lg:p-10 max-w-5xl mx-auto backdrop-blur-sm shadow-2xl relative overflow-hidden">
+          {/* Subtle glow behind the guarantees */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-full bg-brand-orange/5 blur-[80px] -z-10 rounded-full" />
+
+          <div className="text-center mb-10 relative z-10">
+            <h4 className="text-3xl font-serif font-bold text-white mb-3">The A.W. Puma Guarantees</h4>
+            <p className="text-gray-300 max-w-2xl mx-auto text-lg leading-relaxed">
+              Your satisfaction is our reputation. Every job comes with our service guarantees — if it's not right, we make it right.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 relative z-10 text-left">
+            <div className="bg-brand-navy-dark/50 border border-white/10 rounded-lg p-6 hover:border-brand-orange/50 transition-colors">
+              <h5 className="font-bold text-lg text-white mb-2 flex items-center gap-3">
+                <span className="text-brand-orange text-xl">✓</span>
+                Absolutely Happy Guarantee
+              </h5>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                If you are not completely satisfied with our work, we will return and resolve the issue for free until you are absolutely happy.
+              </p>
+            </div>
+
+            <div className="bg-brand-navy-dark/50 border border-white/10 rounded-lg p-6 hover:border-brand-orange/50 transition-colors">
+              <h5 className="font-bold text-lg text-white mb-2 flex items-center gap-3">
+                <span className="text-brand-orange text-xl">✓</span>
+                Lowest Price Guarantee
+              </h5>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                We promise that our price will be the lowest for comparable equipment and services. If you find a better price from a licensed competitor, we'll beat it.
+              </p>
+            </div>
+
+            <div className="bg-brand-navy-dark/50 border border-white/10 rounded-lg p-6 hover:border-brand-orange/50 transition-colors">
+              <h5 className="font-bold text-lg text-white mb-2 flex items-center gap-3">
+                <span className="text-brand-orange text-xl">✓</span>
+                Better Than We Found It Guarantee
+              </h5>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Our technicians wear shoe covers, use drop cloths, and commit to leaving your home cleaner than when they arrived.
+              </p>
+            </div>
+
+            <div className="bg-brand-navy-dark/50 border border-white/10 rounded-lg p-6 hover:border-brand-orange/50 transition-colors">
+              <h5 className="font-bold text-lg text-white mb-2 flex items-center gap-3">
+                <span className="text-brand-orange text-xl">✓</span>
+                Fix It or Hotel Guarantee
+              </h5>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                If we can't fix your home's essential climate control system overnight during a breakdown, we'll put your family up in a hotel.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
