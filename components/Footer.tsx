@@ -11,10 +11,7 @@ export const Footer: React.FC = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-brand-gold rounded-sm flex items-center justify-center">
-                <Zap size={18} className="text-white" fill="currentColor" />
-              </div>
-              <span className="text-2xl font-serif font-bold text-white">A.W. PUMA</span>
+              <img src="/images/logos/shield-logo-white.png" alt="A.W. Puma" className="h-20 w-auto object-contain" />
             </div>
             <p className="mb-6 leading-relaxed">
               Premium home services and climate control for discerning homeowners in Massachusetts. Quality you can trust, built to last.
@@ -22,8 +19,6 @@ export const Footer: React.FC = () => {
             <div className="flex gap-4">
               <a href="https://www.facebook.com/awpumahomeservices" target="_blank" rel="noopener noreferrer" className="bg-white/5 p-2 rounded-full hover:bg-brand-gold hover:text-white transition-all"><Facebook size={18} /></a>
               <a href="#" className="bg-white/5 p-2 rounded-full hover:bg-brand-gold hover:text-white transition-all"><Instagram size={18} /></a>
-              <a href="#" className="bg-white/5 p-2 rounded-full hover:bg-brand-gold hover:text-white transition-all"><Linkedin size={18} /></a>
-              <a href="#" className="bg-white/5 p-2 rounded-full hover:bg-brand-gold hover:text-white transition-all"><Twitter size={18} /></a>
             </div>
           </div>
 
@@ -37,7 +32,6 @@ export const Footer: React.FC = () => {
               <li><Link to="/services/ac" className="hover:text-brand-gold transition-colors">Air Conditioning</Link></li>
               <li><Link to="/services/boiler" className="hover:text-brand-gold transition-colors">Boiler Services</Link></li>
               <li><Link to="/services/water-heaters" className="hover:text-brand-gold transition-colors">Water Heaters</Link></li>
-              <li><Link to="/mass-save" className="hover:text-brand-gold transition-colors">Mass Save®</Link></li>
             </ul>
           </div>
 
@@ -45,10 +39,9 @@ export const Footer: React.FC = () => {
             <h3 className="font-bold text-white mb-6 uppercase tracking-wider">Company</h3>
             <ul className="space-y-4">
               <li><Link to="/about" className="hover:text-brand-gold transition-colors">About Us</Link></li>
-              <li><Link to="/services" className="hover:text-brand-gold transition-colors">Our Services</Link></li>
+              <li><Link to="/mass-save" className="hover:text-brand-gold transition-colors">Mass Save®</Link></li>
               <li><a href="#" className="hover:text-brand-gold transition-colors">Careers</a></li>
               <li><Link to="/contact" className="hover:text-brand-gold transition-colors">Contact</Link></li>
-              <li><a href="#" className="hover:text-brand-gold transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
 
@@ -74,7 +67,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} A.W. PUMA. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} A.W. Puma Home Services.</p>
           <div className="mt-4 md:mt-0 flex gap-6 text-xs uppercase tracking-wide">
             <a href="#" className="hover:text-white">Terms</a>
             <a href="#" className="hover:text-white">Privacy</a>
