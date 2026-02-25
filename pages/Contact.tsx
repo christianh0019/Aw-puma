@@ -8,8 +8,8 @@ export const Contact: React.FC = () => {
         <div className="bg-white">
             <SEO
                 title="Contact A.W. Puma | Request a Home Service Quote"
-                description="Get in touch with A.W. Puma Home Services for expert HVAC, plumbing, and electrical work in Greater Boston. Request a free quote today."
-                keywords="contact A.W. Puma, request home service, Boston HVAC contractor contact, plumbing service inquiry"
+                description="Get in touch with A.W. Puma Home Services for expert heating and cooling work in Greater Boston. Request a free quote today."
+                keywords="contact A.W. Puma, request home service, Boston heating cooling contractor contact, AC service inquiry"
                 canonical="https://awpumahome.com/contact"
             />
             {/* HEADER */}
@@ -100,12 +100,12 @@ export const Contact: React.FC = () => {
                         <div className="space-y-2">
                             <label className="text-sm font-bold text-brand-navy uppercase tracking-wider">Service Needed</label>
                             <select className="w-full px-4 py-3 border border-gray-300 rounded-sm outline-none focus:border-brand-gold bg-white">
-                                <option>Home Remodeling</option>
-                                <option>HVAC Install / Repair</option>
-                                <option>Plumbing Service</option>
-                                <option>Electrical Work</option>
-                                <option>Energy Assessment</option>
-                                <option>Property Maintenance</option>
+                                <option>Furnace Install / Repair</option>
+                                <option>Air Conditioning</option>
+                                <option>Mini Splits</option>
+                                <option>Heat Pump</option>
+                                <option>Boiler Service</option>
+                                <option>Water Heater Service</option>
                                 <option>Other</option>
                             </select>
                         </div>

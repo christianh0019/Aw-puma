@@ -15,7 +15,7 @@ const reviews: Testimonial[] = [
     id: 2,
     name: "Michael Ross",
     location: "Boston, MA",
-    text: "Professional, punctual, and transparent pricing. I manage several rental properties in Boston and A.W. Puma is the only company I call for HVAC and plumbing. They're in a league of their own.",
+    text: "Professional, punctual, and transparent pricing. I manage several rental properties in Boston and A.W. Puma is the only company I call for heating and cooling. They're in a league of their own.",
     rating: 5,
     role: "Property Manager"
   },

@@ -19,7 +19,7 @@ export const FinalCTA: React.FC = () => {
           Ready to Get It Fixed Right?
         </h2>
         <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-          Stop searching. Whether it's heating, cooling, plumbing, or any home service — A.W. Puma has you covered. Free estimates on new installations.
+          Stop searching. Whether it's heating, cooling, boiler repair, or any home service — A.W. Puma has you covered. Free estimates on new installations.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

@@ -10,8 +10,8 @@ export const NewtonLocation: React.FC = () => {
         <div className="bg-white">
             <SEO
                 title="HVAC, Plumbing & Electrical Services Newton MA | A.W. Puma"
-                description="Premium home services in Newton, Massachusetts. From Newton Centre to Chestnut Hill, A.W. Puma provides expert HVAC, plumbing, and electrical solutions."
-                keywords="HVAC services Newton MA, plumber Newton, electrical contractor Newton Massachusetts, home remodeling Newton"
+                description="Premium home services in Newton, Massachusetts. From Newton Centre to Chestnut Hill, A.W. Puma provides expert heating and cooling solutions."
+                keywords="heating services Newton MA, AC Newton, cooling contractor Newton Massachusetts"
                 canonical="https://awpumahome.com/locations/newton"
             />
             {/* 1. HERO SECTION (SOP-02: Section 1) */}
@@ -166,7 +166,7 @@ export const NewtonLocation: React.FC = () => {
                         <Download size={48} className="text-brand-gold mx-auto mb-6" />
                         <h2 className="text-3xl font-serif font-bold text-brand-navy mb-4">Download the 2025 Newton Cost Guide</h2>
                         <p className="text-brand-gray mb-8 max-w-lg mx-auto">
-                            Stop guessing. Get real price per square foot ranges for remodels, additions, and new builds in Newton, minus the contractor fluff.
+                            Stop guessing. Get real cost estimates for heating, cooling, and boiler systems in Newton, minus the contractor fluff.
                         </p>
 
                         <div className="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">

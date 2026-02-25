@@ -16,7 +16,7 @@ export const COUNTY_DATA: Record<string, {
     suffolk: {
         name: 'Suffolk',
         tagline: 'Trusted Home Services in the Heart of Boston',
-        description: 'From Back Bay brownstones to South Boston triple-deckers, our Suffolk County team delivers expert HVAC, plumbing, and home services tailored to the unique needs of urban living.',
+        description: 'From Back Bay brownstones to South Boston triple-deckers, our Suffolk County team delivers expert heating and cooling services tailored to the unique needs of urban living.',
         cities: ['Boston', 'Revere', 'Chelsea', 'Winthrop'],
         stats: [
             { label: 'Years Serving Suffolk', value: '15+' },
@@ -38,7 +38,7 @@ export const COUNTY_DATA: Record<string, {
     norfolk: {
         name: 'Norfolk',
         tagline: 'Reliable Home Services South of Boston',
-        description: 'From Brookline to Braintree, Norfolk County homeowners trust A.W. Puma for prompt, professional HVAC and plumbing services. We know the area and we know the homes.',
+        description: 'From Brookline to Braintree, Norfolk County homeowners trust A.W. Puma for prompt, professional heating and cooling services. We know the area and we know the homes.',
         cities: ['Brookline', 'Quincy', 'Braintree', 'Weymouth', 'Milton', 'Needham', 'Dedham'],
         stats: [
             { label: 'Years Serving Norfolk', value: '12+' },
@@ -113,8 +113,8 @@ export const CountyLocation: React.FC = () => {
         <div className="bg-white">
             <SEO
                 title={`${data.name} County Home Services | A.W. Puma`}
-                description={`Premium HVAC, plumbing, and electrical services across ${data.name} County. Serving ${data.cities.slice(0, 3).join(', ')}, and surrounding Massachusetts areas.`}
-                keywords={`regional home services, Massachusetts service area, local HVAC experts, ${data.name} County plumber`}
+                description={`Premium heating and cooling services across ${data.name} County. Serving ${data.cities.slice(0, 3).join(', ')}, and surrounding Massachusetts areas.`}
+                keywords={`regional home services, Massachusetts service area, local heating experts, ${data.name} County cooling`}
                 canonical={`https://awpumahome.com/locations/${county}`}
             />
             {/* Hero */}

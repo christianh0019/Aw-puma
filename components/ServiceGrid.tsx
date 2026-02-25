@@ -21,7 +21,7 @@ export const ServiceGrid: React.FC = () => {
             Expert Home Services
           </h2>
           <p className="text-brand-gray max-w-2xl mx-auto text-lg leading-relaxed">
-            From heating and cooling to plumbing and beyond — A.W. Puma delivers expert
+            From heating and cooling to boiler maintenance and beyond — A.W. Puma delivers expert
             installation, repair, and maintenance across Massachusetts. One call does it all.
           </p>
         </div>

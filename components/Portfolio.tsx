@@ -20,9 +20,9 @@ export const Portfolio: React.FC = () => {
           {/* Project 1 */}
           <div className="group rounded-sm overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
             <div className="h-64 overflow-hidden relative">
-              <img 
-                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2670&auto=format&fit=crop" 
-                alt="Kitchen Remodel" 
+              <img
+                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2670&auto=format&fit=crop"
+                alt="Boiler Installation"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-brand-navy/0 group-hover:bg-brand-navy/20 transition-colors duration-300"></div>
@@ -30,19 +30,19 @@ export const Portfolio: React.FC = () => {
             <div className="p-6 bg-white border border-t-0 border-gray-100">
               <span className="text-brand-gold text-xs font-bold uppercase tracking-wider mb-2 block">Newton, MA</span>
               <h3 className="text-xl font-serif font-bold text-brand-navy mb-2">Modern Kitchen Expansion</h3>
-              <p className="text-gray-500 text-sm">Full gut renovation including plumbing relocation and custom cabinetry.</p>
+              <p className="text-gray-500 text-sm">High-efficiency boiler installation and system optimization.</p>
             </div>
           </div>
 
           {/* Project 2 */}
           <div className="group rounded-sm overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
             <div className="h-64 overflow-hidden relative">
-              <img 
-                src="https://images.unsplash.com/photo-1620626012053-1c16e71e9215?q=80&w=2670&auto=format&fit=crop" 
-                alt="Luxury Bathroom" 
+              <img
+                src="https://images.unsplash.com/photo-1620626012053-1c16e71e9215?q=80&w=2670&auto=format&fit=crop"
+                alt="Luxury Bathroom"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-               <div className="absolute inset-0 bg-brand-navy/0 group-hover:bg-brand-navy/20 transition-colors duration-300"></div>
+              <div className="absolute inset-0 bg-brand-navy/0 group-hover:bg-brand-navy/20 transition-colors duration-300"></div>
             </div>
             <div className="p-6 bg-white border border-t-0 border-gray-100">
               <span className="text-brand-gold text-xs font-bold uppercase tracking-wider mb-2 block">Brookline, MA</span>
@@ -54,16 +54,16 @@ export const Portfolio: React.FC = () => {
           {/* Project 3 */}
           <div className="group rounded-sm overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
             <div className="h-64 overflow-hidden relative">
-              <img 
-                src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=2670&auto=format&fit=crop" 
-                alt="HVAC Installation" 
+              <img
+                src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=2670&auto=format&fit=crop"
+                alt="AC Installation"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-               <div className="absolute inset-0 bg-brand-navy/0 group-hover:bg-brand-navy/20 transition-colors duration-300"></div>
+              <div className="absolute inset-0 bg-brand-navy/0 group-hover:bg-brand-navy/20 transition-colors duration-300"></div>
             </div>
             <div className="p-6 bg-white border border-t-0 border-gray-100">
               <span className="text-brand-gold text-xs font-bold uppercase tracking-wider mb-2 block">Wellesley, MA</span>
-              <h3 className="text-xl font-serif font-bold text-brand-navy mb-2">High-Efficiency HVAC</h3>
+              <h3 className="text-xl font-serif font-bold text-brand-navy mb-2">High-Efficiency AC</h3>
               <p className="text-gray-500 text-sm">Ducted heat pump system installation for a 4,000 sq ft historic home.</p>
             </div>
           </div>

@@ -50,7 +50,7 @@ export const Hero: React.FC = () => {
 
             {/* Sub-headline */}
             <p className="text-base sm:text-lg text-gray-400 mb-10 max-w-lg leading-relaxed">
-              Heating, cooling, plumbing, and more — trusted by Massachusetts homeowners for over 20 years.
+              Heating, cooling, boilers, and more — trusted by Massachusetts homeowners for over 20 years.
               One call handles it all.
             </p>
 
@@ -122,7 +122,7 @@ export const Hero: React.FC = () => {
             <div className="absolute top-8 right-4 lg:top-12 lg:right-0 bg-white/10 backdrop-blur-md rounded-xl px-4 py-3 border border-white/10 shadow-lg animate-float" style={{ animationDelay: '1s' }}>
               <div className="flex items-center gap-2">
                 <Snowflake size={18} className="text-blue-300" />
-                <span className="text-white text-sm font-semibold">HVAC</span>
+                <span className="text-white text-sm font-semibold">Heating</span>
               </div>
             </div>
 
@@ -136,7 +136,7 @@ export const Hero: React.FC = () => {
             <div className="absolute bottom-4 right-8 lg:bottom-8 lg:right-8 bg-white/10 backdrop-blur-md rounded-xl px-4 py-3 border border-white/10 shadow-lg animate-float" style={{ animationDelay: '3s' }}>
               <div className="flex items-center gap-2">
                 <Wrench size={18} className="text-green-300" />
-                <span className="text-white text-sm font-semibold">Plumbing</span>
+                <span className="text-white text-sm font-semibold">Cooling</span>
               </div>
             </div>
           </div>

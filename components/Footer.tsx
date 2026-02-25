@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
               <span className="text-2xl font-serif font-bold text-white">A.W. PUMA</span>
             </div>
             <p className="mb-6 leading-relaxed">
-              Premium home services and remodeling for discerning homeowners in Massachusetts. Quality you can trust, built to last.
+              Premium home services and climate control for discerning homeowners in Massachusetts. Quality you can trust, built to last.
             </p>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/awpumahomeservices" target="_blank" rel="noopener noreferrer" className="bg-white/5 p-2 rounded-full hover:bg-brand-gold hover:text-white transition-all"><Facebook size={18} /></a>
@@ -31,11 +31,12 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="font-bold text-white mb-6 uppercase tracking-wider">Services</h3>
             <ul className="space-y-4">
-              <li><Link to="/services/remodeling" className="hover:text-brand-gold transition-colors">Full Home Remodeling</Link></li>
-              <li><Link to="/services/plumbing" className="hover:text-brand-gold transition-colors">Precision Plumbing</Link></li>
-              <li><Link to="/services/hvac" className="hover:text-brand-gold transition-colors">HVAC Solutions</Link></li>
-              <li><Link to="/services/electrical" className="hover:text-brand-gold transition-colors">Electrical Works</Link></li>
-              <li><Link to="/services/energy" className="hover:text-brand-gold transition-colors">Energy Assessment</Link></li>
+              <li><Link to="/services/furnace" className="hover:text-brand-gold transition-colors">Furnace Services</Link></li>
+              <li><Link to="/services/mini-splits" className="hover:text-brand-gold transition-colors">Mini Splits</Link></li>
+              <li><Link to="/services/heat-pump" className="hover:text-brand-gold transition-colors">Heat Pumps</Link></li>
+              <li><Link to="/services/ac" className="hover:text-brand-gold transition-colors">Air Conditioning</Link></li>
+              <li><Link to="/services/boiler" className="hover:text-brand-gold transition-colors">Boiler Services</Link></li>
+              <li><Link to="/services/water-heaters" className="hover:text-brand-gold transition-colors">Water Heaters</Link></li>
             </ul>
           </div>
 
@@ -43,7 +44,7 @@ export const Footer: React.FC = () => {
             <h3 className="font-bold text-white mb-6 uppercase tracking-wider">Company</h3>
             <ul className="space-y-4">
               <li><Link to="/about" className="hover:text-brand-gold transition-colors">About Us</Link></li>
-              <li><Link to="/services/maintenance" className="hover:text-brand-gold transition-colors">Our Process</Link></li>
+              <li><Link to="/services" className="hover:text-brand-gold transition-colors">Our Services</Link></li>
               <li><a href="#" className="hover:text-brand-gold transition-colors">Careers</a></li>
               <li><Link to="/contact" className="hover:text-brand-gold transition-colors">Contact</Link></li>
               <li><a href="#" className="hover:text-brand-gold transition-colors">Privacy Policy</a></li>

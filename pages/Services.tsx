@@ -1,3 +1,4 @@
+import React from 'react';
 import { ServiceGrid } from '../components/ServiceGrid';
 import { SEO } from '../components/SEO';
 
@@ -6,8 +7,8 @@ export const Services: React.FC = () => {
         <div className="bg-white pt-24">
             <SEO
                 title="Expert Home Services in Boston | A.W. Puma"
-                description="Explore our full suite of premium home services including HVAC, Plumbing, Electrical, and Home Remodeling. Quality craftsmanship guaranteed."
-                keywords="residential home services, hvac services Boston, plumbing solutions Metro West, electrical contractors, home remodeling massachusetts"
+                description="Explore our full suite of premium home services including Furnace, AC, Heat Pump, Mini Splits, and Boiler systems. Quality craftsmanship guaranteed."
+                keywords="residential home services, hvac services Boston, air conditioning, furnace, boiler, mini-splits, heat pump"
                 canonical="https://awpumahome.com/services"
             />
             <section className="bg-brand-navy text-white py-20 text-center">

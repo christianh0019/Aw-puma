@@ -8,8 +8,8 @@ export const About: React.FC = () => {
         <div className="bg-white">
             <SEO
                 title="About A.W. Puma Home Services | Building Trust Since 2005"
-                description="Learn about A.W. Puma's history and commitment to quality home services in Greater Boston. Our team of experts provides HVAC, plumbing, and electrical solutions."
-                keywords="about A.W. Puma, home services history Boston, professional contractors Massachusetts, A.W. Puma mission"
+                description="Learn about A.W. Puma's history and commitment to quality home services in Greater Boston. Our team of experts provides top-tier heating and cooling solutions."
+                keywords="about A.W. Puma, HVAC history Boston, professional contractors Massachusetts, A.W. Puma mission"
                 canonical="https://awpumahome.com/about"
             />
             {/* 1. HERO SECTION */}
@@ -115,7 +115,7 @@ export const About: React.FC = () => {
                             <div className="absolute -left-[43px] top-1 w-6 h-6 rounded-full bg-brand-gold border-4 border-white shadow-sm"></div>
                             <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">2005</span>
                             <h3 className="text-2xl font-bold text-brand-navy mb-2">Foundation</h3>
-                            <p className="text-brand-gray">Albert Puma starts the company with a single truck, focusing on high-end kitchen remodels in Newton.</p>
+                            <p className="text-brand-gray">Albert Puma starts the company with a single truck, focusing on high-end heating and cooling installations in Newton.</p>
                         </div>
                         {/* 2012 */}
                         <div className="relative">
@@ -136,7 +136,7 @@ export const About: React.FC = () => {
                             <div className="absolute -left-[43px] top-1 w-6 h-6 rounded-full bg-brand-navy border-4 border-white shadow-sm"></div>
                             <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">Today</span>
                             <h3 className="text-2xl font-bold text-brand-navy mb-2">Full-Service Design Build</h3>
-                            <p className="text-brand-gray">Now a team of 15+, managing multi-million dollar custom builds and comprehensive property maintenance plans across Greater Boston.</p>
+                            <p className="text-brand-gray">Now a team of 15+, managing multi-million dollar custom climate control builds and comprehensive system maintenance plans across Greater Boston.</p>
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@ export const CITY_DATA: Record<string, {
         name: 'Boston',
         county: 'Suffolk',
         tagline: 'Premium Home Services in the Hub',
-        description: 'From historic Back Bay brownstones to sleek Seaport condos, A.W. Puma is Boston\'s trusted partner for cooling, heating, and plumbing solutions.',
+        description: 'From historic Back Bay brownstones to sleek Seaport condos, A.W. Puma is Boston\'s trusted partner for cooling, heating, and boiler solutions.',
         aboutCity: 'Working in Boston requires navigating tight streets, strict parking regulations, and historic preservation codes. Our team is expert at managing urban logistics to ensure your project stays on track.',
         stats: [
             { label: 'Boston Projects', value: '450+' },
@@ -39,7 +39,7 @@ export const CITY_DATA: Record<string, {
     'worcester': {
         name: 'Worcester',
         county: 'Worcester',
-        tagline: 'Reliable HVAC & Plumbing in Central Mass',
+        tagline: 'Reliable Heating & Cooling in Central Mass',
         description: 'Serving the "Heart of the Commonwealth" with fast, professional home services. We keep Worcester homes comfortable year-round.',
         aboutCity: 'Worcester\'s hilly terrain and varied housing stock—from classic triple-deckers to modern suburban developments—require a versatile approach to home maintenance.',
         stats: [
@@ -49,7 +49,7 @@ export const CITY_DATA: Record<string, {
         ],
         quirks: [
             { title: 'Hilly Terrain', icon: Building, description: 'We understand the unique drainage and foundation challenges presented by Worcester\'s "Seven Hills."', borderColor: 'border-brand-navy' },
-            { title: 'Triple-Decker Experts', icon: Waves, description: 'We specialize in multi-unit HVAC and plumbing systems common in Worcester\'s historic triple-decker apartments.', borderColor: 'border-brand-gold' },
+            { title: 'Triple-Decker Experts', icon: Waves, description: 'We specialize in multi-unit heating and cooling systems common in Worcester\'s historic triple-decker apartments.', borderColor: 'border-brand-gold' },
             { title: 'Harsh Winters', icon: FileQuestion, description: 'Central Mass gets hit hard. Our emergency response team is built for the Worcester winter grind.', borderColor: 'border-brand-navy' }
         ],
         faq: [
@@ -61,7 +61,7 @@ export const CITY_DATA: Record<string, {
         name: 'Brockton',
         county: 'Plymouth',
         tagline: 'Local Home Service Experts in the City of Champions',
-        description: 'Providing champion-level HVAC, plumbing, and electrical services to homeowners across Brockton and the South Shore.',
+        description: 'Providing champion-level heating and cooling services to homeowners across Brockton and the South Shore.',
         aboutCity: 'Brockton homeowners trust A.W. Puma for honest pricing and dependable service. We know the local neighborhoods from Montello to Campello.',
         stats: [
             { label: 'Local Projects', value: '250+' },
@@ -82,7 +82,7 @@ export const CITY_DATA: Record<string, {
         name: 'Lawrence',
         county: 'Essex',
         tagline: 'Expert Home Services in the Merrimack Valley',
-        description: 'Reliable HVAC and plumbing solutions for Lawrence homeowners.',
+        description: 'Reliable heating and cooling solutions for Lawrence homeowners.',
         aboutCity: 'Serving the diverse housing needs of the Merrimack Valley with professional care.',
         stats: [{ label: 'Essex Projects', value: '200+' }, { label: 'Pro Team', value: 'North Shore' }, { label: 'Licensed', value: 'Yes' }],
         quirks: [{ title: 'Mill City Pros', icon: Building, description: 'Expertise in both historic mill-era homes and modern developments.', borderColor: 'border-brand-navy' }],
@@ -91,7 +91,7 @@ export const CITY_DATA: Record<string, {
     'lowell': {
         name: 'Lowell',
         county: 'Middlesex',
-        tagline: 'Professional HVAC & Plumbing in Lowell',
+        tagline: 'Professional Heating & Cooling in Lowell',
         description: 'Trusted home services for the Lowell community.',
         aboutCity: 'Providing expert maintenance for Lowell\'s unique mix of historic and modern homes.',
         stats: [{ label: 'Middlesex Pros', value: '300+' }, { label: 'Service', value: 'Daily' }, { label: 'Rated', value: '5 Stars' }],
@@ -102,7 +102,7 @@ export const CITY_DATA: Record<string, {
         name: 'Cambridge',
         county: 'Middlesex',
         tagline: 'Smart Home Services for Cambridge',
-        description: 'High-efficiency HVAC and plumbing solutions for Cambridge residents.',
+        description: 'High-efficiency heating and cooling solutions for Cambridge residents.',
         aboutCity: 'Specializing in the tight urban spaces and historic requirements of Cambridge.',
         stats: [{ label: 'Cambridge Jobs', value: '350+' }, { label: 'Speed', value: 'Rapid' }, { label: 'Quality', value: 'Elite' }],
         quirks: [{ title: 'Urban Scale', icon: Building, description: 'Expertise in mini-split and compact systems for Cambridge homes.', borderColor: 'border-brand-navy' }],
@@ -112,7 +112,7 @@ export const CITY_DATA: Record<string, {
         name: 'Wellesley',
         county: 'Norfolk',
         tagline: 'Premium Home Services for Wellesley',
-        description: 'Elite HVAC, plumbing, and remodeling for Wellesley homeowners.',
+        description: 'Elite heating and cooling for Wellesley homeowners.',
         aboutCity: 'Delivering the level of detail and service Wellesley residents expect.',
         stats: [{ label: 'Norfolk Elite', value: '400+' }, { label: 'Referrals', value: '100s' }, { label: 'Guaranteed', value: 'Yes' }],
         quirks: [{ title: 'High Standards', icon: Building, description: 'Meticulous attention to detail in every remodel and repair.', borderColor: 'border-brand-navy' }],
@@ -122,17 +122,17 @@ export const CITY_DATA: Record<string, {
         name: 'Needham',
         county: 'Norfolk',
         tagline: 'Trusted Home Services in Needham',
-        description: 'Reliable heating, cooling, and plumbing for Needham families.',
+        description: 'Reliable heating, cooling, and boiler systems for Needham families.',
         aboutCity: 'Your local partner for all things home maintenance in Needham.',
         stats: [{ label: 'Local Jobs', value: '300+' }, { label: 'Response', value: 'Quick' }, { label: 'Service', value: 'A+' }],
         quirks: [{ title: 'Family-Focused', icon: Building, description: 'Clean, professional service that respects your home and family.', borderColor: 'border-brand-navy' }],
-        faq: [{ q: "What services do you provide in Needham?", a: "We provide full-service HVAC, plumbing, electrical, and remodeling." }]
+        faq: [{ q: "What services do you provide in Needham?", a: "We provide full-service heating, cooling, and boiler services." }]
     },
     'winchester': {
         name: 'Winchester',
         county: 'Middlesex',
         tagline: 'Expert Home Services for Winchester',
-        description: 'Quality HVAC and plumbing tailored for Winchester homes.',
+        description: 'Quality heating and cooling tailored for Winchester homes.',
         aboutCity: 'Maintaining the beauty and comfort of Winchester\'s residential architecture.',
         stats: [{ label: 'Winchester Work', value: '200+' }, { label: 'Local', value: 'Yes' }, { label: 'Pro', value: 'Certified' }],
         quirks: [{ title: 'Architectural Care', icon: Building, description: 'Respecting the character of Winchester\'s historic homes.', borderColor: 'border-brand-navy' }],
@@ -142,7 +142,7 @@ export const CITY_DATA: Record<string, {
         name: 'Dover',
         county: 'Norfolk',
         tagline: 'Reliable Home Services for Dover',
-        description: 'Expert HVAC and plumbing for Dover residents.',
+        description: 'Expert heating and cooling for Dover residents.',
         aboutCity: 'Providing professional care for Dover\'s unique residential properties.',
         stats: [{ label: 'Norfolk Pro', value: '150+' }, { label: 'Response', value: 'Fast' }, { label: 'Quality', value: 'Top' }],
         quirks: [{ title: 'Estate Service', icon: Building, description: 'Specialized care for larger residential estates and systems.', borderColor: 'border-brand-navy' }],
@@ -152,7 +152,7 @@ export const CITY_DATA: Record<string, {
         name: 'New Bedford',
         county: 'Bristol',
         tagline: 'Professional Home Services in New Bedford',
-        description: 'Trusted HVAC and plumbing for the South Coast.',
+        description: 'Trusted heating and cooling for the South Coast.',
         aboutCity: 'Serving the New Bedford community with dependable home solutions.',
         stats: [{ label: 'Bristol Jobs', value: '250+' }, { label: 'Team', value: 'South Coast' }, { label: 'Service', value: 'Rapid' }],
         quirks: [{ title: 'Coastal Care', icon: Building, description: 'Systems designed to handle the coastal environment of New Bedford.', borderColor: 'border-brand-navy' }],
@@ -182,9 +182,9 @@ export const CityLocation: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title={`HVAC, Plumbing & Electrical Services ${data.name} MA | A.W. Puma`}
-                description={`Premium home services in ${data.name}, Massachusetts. Expert ${data.county} County HVAC, plumbing, and electrical solutions for local homeowners.`}
-                keywords={`HVAC services ${data.name} MA, plumber ${data.name}, electrical contractor ${data.name} Massachusetts, home remodeling ${data.name}`}
+                title={`Heating & Cooling Services ${data.name} MA | A.W. Puma`}
+                description={`Premium home services in ${data.name}, Massachusetts. Expert ${data.county} County heating and cooling solutions for local homeowners.`}
+                keywords={`heating services ${data.name} MA, AC ${data.name}, cooling contractor ${data.name} Massachusetts`}
                 canonical={`https://awpumahome.com/locations/city/${cityName}`}
             />
             {/* 1. HERO SECTION */}
