@@ -53,8 +53,8 @@ export const HeatPump: React.FC = () => {
                             </button>
                         </a>
                         <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-[#10b981] hover:bg-[#059669] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Book Online
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Get Free Quote
                             </button>
                         </Link>
                     </div>
@@ -85,7 +85,7 @@ export const HeatPump: React.FC = () => {
                             </div>
                         </div>
                         <div className="order-1 lg:order-2">
-                            <span className="text-[#10b981] font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><Zap size={18} className="inline-block mb-1" /> Financial Incentives</span>
+                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><Zap size={18} className="inline-block mb-1" /> Financial Incentives</span>
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">Maximize Your Savings with 2026 Mass Save Heat Pump Rebates</h2>
                             <p className="text-lg text-brand-gray leading-relaxed mb-6">
                                 Upgrade your home's comfort and significantly lower your energy bills. As a certified installer, we help Massachusetts homeowners secure up to <strong>$16,000 in 2026 Mass Save rebates</strong> for whole-home electric heat pump conversions.
@@ -140,20 +140,24 @@ export const HeatPump: React.FC = () => {
             {/* SECTION 4: SERVICE AREAS */}
             <section className="py-24 bg-brand-navy text-white">
                 <div className="max-w-5xl mx-auto px-4 text-center">
-                    <MapPin size={48} className="text-[#10b981] mx-auto mb-6" />
+                    <MapPin size={48} className="text-brand-orange mx-auto mb-6" />
                     <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Massachusetts Counties We Serve</h2>
                     <p className="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto mb-12">
                         We are proud to provide top-rated, rapid-response heat pump services to homeowners throughout the following areas:
                     </p>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto mb-12">
                         {["Suffolk County", "Middlesex County", "Norfolk County", "Plymouth County", "Essex County", "Worcester County", "Bristol County"].map((county, index) => (
                             <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-4 flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
-                                <CheckCircle2 size={20} className="text-[#10b981] flex-shrink-0" />
+                                <CheckCircle2 size={20} className="text-brand-gold flex-shrink-0" />
                                 <span className="font-semibold text-lg">{county}</span>
                             </div>
                         ))}
                     </div>
+
+                    <Link to="/contact" className="inline-block">
+                        <Button variant="primary" size="lg">Check Service Availability</Button>
+                    </Link>
                 </div>
             </section>
 
@@ -165,8 +169,8 @@ export const HeatPump: React.FC = () => {
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-[#10b981] hover:bg-[#059669] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Book Online
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Get Free Quote
                             </button>
                         </Link>
                         <a href="tel:6176183366" className="w-full sm:w-auto">
