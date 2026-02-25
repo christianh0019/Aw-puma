@@ -68,10 +68,10 @@ export const ServiceGrid: React.FC = () => {
 
         {/* Bottom CTA */}
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-3 bg-brand-navy rounded-full px-8 py-4 shadow-lg hover:shadow-hero transition-all duration-300 hover:-translate-y-0.5 group">
-            <span className="text-white font-bold text-sm">Not sure what you need?</span>
-            <Link to="/contact" className="inline-flex items-center text-brand-orange font-bold text-sm uppercase tracking-wide group-hover:underline">
-              Talk to an Expert <ArrowRight size={14} className="ml-1.5 group-hover:translate-x-1 transition-transform" />
+          <div className="inline-flex items-center gap-4 bg-brand-navy rounded-full px-10 py-5 shadow-lg hover:shadow-hero transition-all duration-300 hover:-translate-y-0.5 group">
+            <span className="text-white font-bold text-lg">Not sure what you need?</span>
+            <Link to="/contact" className="inline-flex items-center text-brand-orange font-bold text-lg uppercase tracking-wide group-hover:underline">
+              Talk to an Expert <ArrowRight size={18} className="ml-1.5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>

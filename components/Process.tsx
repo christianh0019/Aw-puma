@@ -34,11 +34,15 @@ export const Process: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <span className="text-brand-orange font-bold text-sm uppercase tracking-[0.2em] mb-3 block">How It Works</span>
+          <span className="text-brand-orange font-bold text-sm uppercase tracking-[0.2em] mb-3 block">How We Work</span>
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Simple. Honest. Professional.</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-300 max-w-2xl mx-auto text-lg mb-8">
             No surprises, no upsells. Here's exactly what happens when you call A.W. Puma.
           </p>
+          <a href="tel:6176183366" className="inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-orange-dark text-white font-bold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl text-lg">
+            <Phone size={20} />
+            Call Us Today
+          </a>
         </div>
 
         <div className="relative">

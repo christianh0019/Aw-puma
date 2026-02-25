@@ -43,7 +43,7 @@ export const MassSave: React.FC = () => {
                                         <DollarSign size={20} className="text-green-600" />
                                     </div>
                                     <div>
-                                        <div className="font-bold text-brand-navy text-sm">Up to $10,000+</div>
+                                        <div className="font-bold text-brand-navy text-sm">Up to $8,500+</div>
                                         <div className="text-xs text-brand-gray-light">In available rebates</div>
                                     </div>
                                 </div>
