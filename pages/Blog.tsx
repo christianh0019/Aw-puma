@@ -1,36 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
 import { Button } from '../components/ui/Button';
 import { Calendar, User, ArrowRight } from 'lucide-react';
+import { blogPosts } from '../data/blogPosts';
 
 export const Blog: React.FC = () => {
-    const posts = [
-        {
-            id: 1,
-            title: "Expert Tips for Maintaining Your HVAC System This Winter",
-            date: "February 20, 2026",
-            author: "Alberto Puma",
-            excerpt: "Stay warm and save on energy bills with these essential winter maintenance tips for your home heating system.",
-            image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecb?q=80&w=2070&auto=format&fit=crop"
-        },
-        {
-            id: 2,
-            title: "Why Mass Save® Is a Game Changer for Massachusetts Homeowners",
-            date: "February 15, 2026",
-            author: "Sarah Jenkins",
-            excerpt: "Learn how you can access thousands of dollars in rebates and specialized financing for energy efficiency upgrades.",
-            image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2070&auto=format&fit=crop"
-        },
-        {
-            id: 3,
-            title: "The Benefits of Ductless Mini-Split Systems",
-            date: "February 10, 2026",
-            author: "Michael Ross",
-            excerpt: "Discover why more homeowners are switching to ductless solutions for targeted heating and cooling in their homes.",
-            image: "https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?q=80&w=2070&auto=format&fit=crop"
-        }
-    ];
-
     return (
         <div className="bg-white pt-24 pb-16">
             <SEO
@@ -49,7 +24,7 @@ export const Blog: React.FC = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {posts.map((post) => (
+                    {blogPosts.map((post) => (
                         <article key={post.id} className="flex flex-col bg-white border border-gray-100 rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                             <div className="aspect-video overflow-hidden">
                                 <img
@@ -76,10 +51,12 @@ export const Blog: React.FC = () => {
                                     {post.excerpt}
                                 </p>
                                 <div className="mt-auto">
-                                    <Button variant="outline-navy" size="sm" className="w-full justify-between group">
-                                        Read More
-                                        <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
-                                    </Button>
+                                    <Link to={`/blog/${post.slug}`} className="block">
+                                        <Button variant="outline-navy" size="sm" className="w-full justify-between group">
+                                            Read More
+                                            <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </article>

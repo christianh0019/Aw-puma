@@ -17,6 +17,7 @@ import { CountyLocation } from './pages/locations/CountyLocation';
 import { CityLocation } from './pages/locations/CityLocation';
 import { Contact } from './pages/Contact';
 import { Blog } from './pages/Blog';
+import { BlogPost } from './pages/BlogPost';
 import { MassSave } from './pages/MassSave';
 import { ScrollToTop } from './components/ScrollToTop';
 
@@ -43,6 +44,7 @@ const App: React.FC = () => {
             <Route path="/locations/:county" element={<CountyLocation />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/mass-save" element={<MassSave />} />
           </Routes>
         </main>
