@@ -15,7 +15,7 @@ const steps = [
   {
     icon: Wrench,
     title: "3. Expert Repair or Install",
-    desc: "We get to work with quality parts and proven techniques. Most jobs are finished same-day. We protect your home throughout."
+    desc: "We get to work with quality parts and proven techniques. Almost all jobs are finished on-time. We protect your home throughout."
   },
   {
     icon: ThumbsUp,

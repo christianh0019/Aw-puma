@@ -14,8 +14,8 @@ export const Contact: React.FC = () => {
             />
             {/* HEADER */}
             <section className="pt-24 pb-16 bg-brand-navy text-white text-center">
-                <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Start Your Project</h1>
-                <p className="text-xl text-gray-300">Tell us about your home. We reply within 24 hours.</p>
+                <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Contact Us</h1>
+                <p className="text-xl text-gray-300">We'll get back to you within 5 minutes during business hours.</p>
             </section>
 
             <div className="max-w-7xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-16">
