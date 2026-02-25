@@ -1,205 +1,183 @@
-import React, { useState } from 'react';
-import { ArrowRight, CheckCircle2, AlertTriangle, ShieldCheck, Wind, FileText, Star, Plus, Minus, Snowflake, Zap } from 'lucide-react';
+import React from 'react';
 import { Button } from '../../components/ui/Button';
 import { SEO } from '../../components/SEO';
+import { Link } from 'react-router-dom';
+import { ShieldCheck, Wind, ThermometerSnowflake, Wrench, MapPin, CheckCircle2 } from 'lucide-react';
 
 export const MiniSplits: React.FC = () => {
-    const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
-
     return (
         <div className="bg-white">
             <SEO
-                title="Ductless Mini-Split Installation Boston | Quiet Cooling"
-                description="Expert ductless AC installation and mini-split systems in Greater Boston. Quiet, energy-efficient cooling solutions for every room."
-                keywords="ductless AC installation, mini-split systems Boston, quiet cooling solutions, ductless heating Massachusetts"
+                title="Ductless Mini Split Installation & Repair Massachusetts | A.W. Puma"
+                description="Professional ductless mini split installation, maintenance, and emergency repair services throughout Massachusetts. Perfect for older homes without ductwork."
+                keywords="ductless mini split installation, mini split repair Massachusetts, ductless air conditioning, zoned heating and cooling"
                 canonical="https://awpumahome.com/services/mini-splits"
             />
-            {/* 1. THE PROMISE (HERO) */}
-            <section className="relative min-h-[55vh] flex flex-col justify-center items-center pt-24 pb-16">
-                <div className="absolute inset-0 z-0" style={{ backgroundColor: '#153760' }} />
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 w-full text-center">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-gold/20 border border-brand-gold/50 backdrop-blur-md mb-8">
-                        <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">Ductless Comfort Solutions</span>
+            {/* HERO SECTION */}
+            <section className="relative min-h-[65vh] flex flex-col justify-center items-center pt-24 pb-20 overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2069&auto=format&fit=crop"
+                        alt="Sleek wall-mounted mini split in a beautifully furnished room"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-navy/80" />
+                </div>
+
+                <div className="relative z-10 max-w-5xl mx-auto px-4 w-full text-center">
+                    <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-navy/60 border border-brand-orange/50 shadow-[0_0_15px_rgba(255,107,0,0.3)] backdrop-blur-md mb-8">
+                        <Wind size={20} className="text-brand-orange" />
+                        <span className="text-sm font-bold text-white uppercase tracking-widest">No Ductwork Required</span>
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-tight drop-shadow-2xl">
-                        Mini Split Heating <br />
-                        <span className="text-brand-gold">& Cooling</span>
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-tight drop-shadow-2xl">
+                        Ductless Mini Split Installation <br className="hidden md:block" />
+                        <span className="text-brand-gold">& Repair in Massachusetts</span>
                     </h1>
 
-                    <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
-                        Precision comfort for every room, no ductwork required. Save up to 30% on energy bills with hyper-efficient zone control.
+                    <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed font-light">
+                        We offer professional ductless mini split installation, maintenance, and emergency repair services throughout Massachusetts. Perfect for older homes without ductwork, mini splits provide highly efficient, customized zoned heating and cooling. Call us today for rapid, reliable service in Suffolk, Middlesex, Norfolk, Plymouth, Essex, Worcester, and Bristol counties.
                     </p>
 
+                    {/* Highly Visible Mobile & Desktop Banner below hero text */}
+                    <div className="md:hidden bg-brand-orange/20 border border-brand-orange/50 rounded-lg p-4 mb-8 text-white font-bold text-lg">
+                        <ShieldCheck size={20} className="inline-block mr-2 text-brand-gold relative -top-0.5" />
+                        One-Day Installation
+                    </div>
+
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <Button size="lg" icon={<ArrowRight size={18} />}>
-                            Get a Free Design Quote
-                        </Button>
-                        <Button variant="outline" size="lg">
-                            See Energy Rebates
-                        </Button>
+                        <a href="tel:6176183366" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Schedule Service Now
+                            </button>
+                        </a>
+                        <Link to="/contact" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Get Your Free Quote
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>
 
-            {/* 2. THE EMPATHY LAYER (PAS) */}
-            <section className="py-24 bg-gray-50">
-                <div className="max-w-4xl mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">No Ducts? No Problem.</h2>
-                        <p className="text-lg text-brand-gray leading-relaxed">
-                            Traditional systems aren't always possible in older New England homes. Mini splits provide modern comfort without major renovations.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-8 mb-12">
-                        <div className="bg-white p-8 rounded-sm shadow-sm border-l-4 border-brand-orange">
-                            <div className="flex items-center gap-3 mb-4">
-                                <Snowflake className="text-brand-orange" size={24} />
-                                <h3 className="text-xl font-bold text-brand-navy">That One "Hot" Room</h3>
-                            </div>
-                            <p className="text-brand-gray">
-                                Stop fighting over the thermostat. Mini splits allow you to set specific temperatures for different rooms or additions.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-sm shadow-sm border-l-4 border-brand-orange">
-                            <div className="flex items-center gap-3 mb-4">
-                                <Zap className="text-brand-orange" size={24} />
-                                <h3 className="text-xl font-bold text-brand-navy">High Energy Bills</h3>
-                            </div>
-                            <p className="text-brand-gray">
-                                Window units and electric baseboards are energy hogs. Mini splits use inverter technology to sip electricity while delivering maximum comfort.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="bg-brand-navy text-white p-8 rounded-sm text-center">
-                        <h3 className="text-2xl font-serif font-bold mb-4">The Quietest Comfort</h3>
-                        <p className="text-gray-300 text-lg">
-                            Modern mini splits are whisper-quiet, often operating at decibel levels lower than a library. Enjoy comfort without the noise.
-                        </p>
-                    </div>
+            {/* HIGH VISIBILITY BANNER PROMINENTLY DISPLAYED - DESKTOP ONLY */}
+            <div className="bg-brand-navy border-b-4 border-brand-orange py-6 hidden md:block">
+                <div className="max-w-7xl mx-auto px-4 flex justify-around items-center text-white">
+                    <div className="flex items-center gap-3 font-bold text-2xl"><Wind size={32} className="text-brand-orange" /> No Ductwork Required</div>
+                    <div className="w-px h-12 bg-white/20"></div>
+                    <div className="flex items-center gap-3 font-bold text-2xl"><ShieldCheck size={32} className="text-brand-orange" /> One-Day Installation</div>
                 </div>
-            </section>
+            </div>
 
-            {/* 3. THE COMPETENCE LAYER (3 PILLARS) */}
+            {/* SECTION 2: CUSTOM ZONED COMFORT */}
             <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <span className="text-brand-gold font-bold uppercase tracking-widest text-sm mb-2 block">Ductless Mastery</span>
-                        <h2 className="text-4xl font-serif font-bold text-brand-navy">Specialized Mini Split Engineering</h2>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-12">
-                        {/* Pillar 1: Technical */}
-                        <div className="space-y-6">
-                            <div className="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center">
-                                <Wind className="text-brand-navy" size={32} />
+                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                        <div className="order-2 lg:order-1 relative">
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                                <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?q=80&w=2070&auto=format&fit=crop" alt="Beautifully cooled living room" className="w-full h-full object-cover" />
                             </div>
-                            <h3 className="text-2xl font-bold text-brand-navy">Zone Control Design</h3>
-                            <ul className="space-y-3">
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Single & multi-zone systems</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Wall, floor, or ceiling mounts</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Hyper-Heat performance specialists</span>
-                                </li>
-                            </ul>
+                            <div className="absolute -bottom-10 -right-10 bg-brand-navy text-white p-8 rounded-2xl shadow-xl max-w-sm hidden md:block border border-white/10">
+                                <div className="text-3xl font-serif font-bold text-brand-gold mb-2">Room by Room</div>
+                                <div className="font-bold text-xl mb-2">Total Control</div>
+                                <div className="text-gray-300 text-sm">Set specific temperatures for individual zones.</div>
+                            </div>
                         </div>
-
-                        {/* Pillar 2: Financial */}
-                        <div className="space-y-6">
-                            <div className="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center">
-                                <FileText className="text-brand-navy" size={32} />
-                            </div>
-                            <h3 className="text-2xl font-bold text-brand-navy">Rebate Experts</h3>
-                            <ul className="space-y-3">
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Mass Save® $10,000 specialists</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Federal HVAC tax credit guidance</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Energy ROI analysis provided</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* Pillar 3: Regulatory */}
-                        <div className="space-y-6">
-                            <div className="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center">
-                                <ShieldCheck className="text-brand-navy" size={32} />
-                            </div>
-                            <h3 className="text-2xl font-bold text-brand-navy">Authorized Service</h3>
-                            <ul className="space-y-3">
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Mitsubishi Diamond Pro® Installers</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Factory-trained technicians</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Extended parts & labor warranties</span>
-                                </li>
-                            </ul>
+                        <div className="order-1 lg:order-2">
+                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><ThermometerSnowflake size={18} className="inline-block mb-1" /> Precision Cooling</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">Customized Zoned Comfort for Your Home</h2>
+                            <p className="text-lg text-brand-gray leading-relaxed mb-6">
+                                Eliminate hot and cold spots forever. Ductless mini splits allow you to control the temperature in individual rooms, saving you massive amounts on your monthly energy bills.
+                            </p>
+                            <p className="text-lg text-brand-gray leading-relaxed mb-8">
+                                Our expert team provides fast, minimally invasive installations—often completed in just a single day—with absolutely no messy ductwork required.
+                            </p>
+                            <Link to="/contact">
+                                <Button variant="primary" size="lg">Get Your Free Quote</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* 6. THE DATA LAYER (FAQ) */}
-            <section className="py-24 bg-gray-50">
-                <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl font-serif font-bold text-brand-navy mb-12 text-center">Mini Split FAQs</h2>
-                    <div className="space-y-4">
-                        {[
-                            { q: "Do mini-splits work for heating in New England?", a: "Absolutely. Modern cold-climate mini splits are designed to provide efficient heating even when temperatures drop to -13°F. They are a primary heating source for many local homes." },
-                            { q: "How many indoor units can I have on one outdoor unit?", a: "Depending on the outdoor unit's capacity, you can typically connect between 1 to 8 indoor units, allowing for customized comfort in every major room." },
-                            { q: "What is the maintenance like for a mini split?", a: "Maintenance is easy but critical. You'll need to clean the air filters every few months and have a professional deep clean the coils once a year to maintain efficiency." },
-                            { q: "Can I install a mini split myself?", a: "No. Proper installation requires specialized tools for handling refrigerant lines and electrical work. DIY installation also voids the manufacturer warranty." }
-                        ].map((faq, index) => (
-                            <div key={index} className="bg-white rounded-sm border border-gray-200">
-                                <button
-                                    className="w-full flex items-center justify-between p-6 text-left font-bold text-brand-navy focus:outline-none"
-                                    onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
-                                >
-                                    {faq.q}
-                                    {openFaqIndex === index ? <Minus size={20} className="text-brand-gold" /> : <Plus size={20} className="text-gray-400" />}
-                                </button>
-                                {openFaqIndex === index && (
-                                    <div className="p-6 pt-0 text-brand-gray leading-relaxed border-t border-gray-100">
-                                        {faq.a}
-                                    </div>
-                                )}
+            {/* SECTION 3: REPAIR & MAINTENANCE */}
+            <section className="py-24 bg-gray-50 border-y border-gray-200">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                        <div>
+                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><Wrench size={18} className="inline-block mb-1" /> 24/7 Emergency Service</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">24/7 Mini Split Repair & Maintenance</h2>
+                            <p className="text-lg text-brand-gray leading-relaxed mb-6">
+                                If your mini split is leaking water down the wall, freezing up on the outdoor unit, or simply failing to turn on, our expert technicians dispatch immediately.
+                            </p>
+                            <p className="text-lg text-brand-gray leading-relaxed mb-8">
+                                We accurately diagnose airflow issues, fix refrigerant leaks, and replace blower motors on the first visit so you can get back to being comfortable.
+                            </p>
+
+                            <div className="flex flex-col sm:flex-row gap-4">
+                                <a href="tel:6176183366">
+                                    <button className="w-full sm:w-auto px-6 py-3 bg-brand-orange hover:bg-orange-600 text-white font-bold rounded-md transition-colors flex justify-center items-center gap-2">
+                                        <Wrench size={18} /> Schedule Service Now
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative">
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg mt-8">
+                                    <img src="https://images.unsplash.com/photo-1621905252472-740e2ddf82e5?q=80&w=2069&auto=format&fit=crop" alt="HVAC Repair" className="w-full h-full object-cover" />
+                                </div>
+                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Technician inspecting system" className="w-full h-full object-cover" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 4: SERVICE AREAS */}
+            <section className="py-24 bg-brand-navy text-white">
+                <div className="max-w-5xl mx-auto px-4 text-center">
+                    <MapPin size={48} className="text-brand-orange mx-auto mb-6" />
+                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Massachusetts Counties We Serve</h2>
+                    <p className="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto mb-12">
+                        Our fully stocked trucks are ready to service your ductless mini split systems in:
+                    </p>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto mb-12">
+                        {["Suffolk County", "Middlesex County", "Norfolk County", "Plymouth County", "Essex County", "Worcester County", "Bristol County"].map((county, index) => (
+                            <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-4 flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
+                                <CheckCircle2 size={20} className="text-brand-gold flex-shrink-0" />
+                                <span className="font-semibold text-lg">{county}</span>
                             </div>
                         ))}
                     </div>
+
+                    <Link to="/contact" className="inline-block">
+                        <Button variant="primary" size="lg">Check Service Availability</Button>
+                    </Link>
                 </div>
             </section>
 
-            {/* 7. SOFT CONVERSION (CTA) */}
-            <section className="py-20 bg-brand-light">
+            {/* BOTTOM CTA */}
+            <section className="py-24 bg-brand-light">
                 <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-serif font-bold text-brand-navy mb-6">Experience Better Comfort</h2>
-                    <p className="text-brand-gray mb-8">Schedule a free design consultation and discover the ductless advantage for your home.</p>
+                    <h2 className="text-4xl font-serif font-bold text-brand-navy mb-6">Ready to Eliminate Hot Spots?</h2>
+                    <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">Skip the massive ductwork renovations and get precise localized comfort installed in just one day.</p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <Button size="lg">Book Design Consultation</Button>
-                        <Button variant="outline-navy" size="lg">Get Instant Rebate Info</Button>
+                        <Link to="/contact" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Get Your Free Quote
+                            </button>
+                        </Link>
+                        <a href="tel:6176183366" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Schedule Service Now
+                            </button>
+                        </a>
                     </div>
                 </div>
             </section>
