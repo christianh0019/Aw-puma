@@ -1,19 +1,19 @@
 import React from 'react';
 import { Shield, Users, Clock, Award, Hammer, HeartHandshake } from 'lucide-react';
 import { Button } from '../components/ui/Button';
+import { SEO } from '../components/SEO';
 
 export const About: React.FC = () => {
     return (
         <div className="bg-white">
+            <SEO
+                title="About A.W. Puma Home Services | Building Trust Since 2005"
+                description="Learn about A.W. Puma's history and commitment to quality home services in Greater Boston. Our team of experts provides HVAC, plumbing, and electrical solutions."
+                keywords="about A.W. Puma, home services history Boston, professional contractors Massachusetts, A.W. Puma mission"
+                canonical="https://awpumahome.com/about"
+            />
             {/* 1. HERO SECTION */}
-            <section className="relative pt-32 pb-24 bg-brand-navy text-white overflow-hidden">
-                <div className="absolute inset-0 opacity-10">
-                    <img
-                        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop"
-                        alt="Construction Site"
-                        className="w-full h-full object-cover"
-                    />
-                </div>
+            <section className="relative pt-24 pb-16 bg-brand-navy text-white overflow-hidden">
                 <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">Building Trust, Not Just Houses.</h1>
                     <p className="text-xl text-brand-gold max-w-2xl mx-auto font-light">
@@ -29,7 +29,7 @@ export const About: React.FC = () => {
                         <div className="aspect-[3/4] rounded-sm overflow-hidden shadow-xl">
                             <img
                                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop"
-                                alt="Alberto Puma, Founder"
+                                alt="Albert Puma, Founder"
                                 className="w-full h-full object-cover"
                             />
                         </div>
@@ -56,7 +56,7 @@ export const About: React.FC = () => {
                         </div>
 
                         <div className="pt-6 border-t border-gray-100">
-                            <div className="font-serif text-2xl text-brand-navy">Alberto Puma</div>
+                            <div className="font-serif text-2xl text-brand-navy">Albert Puma</div>
                             <div className="text-sm text-brand-gray uppercase tracking-widest font-bold">Founder & Principal</div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ export const About: React.FC = () => {
                             <div className="absolute -left-[43px] top-1 w-6 h-6 rounded-full bg-brand-gold border-4 border-white shadow-sm"></div>
                             <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">2005</span>
                             <h3 className="text-2xl font-bold text-brand-navy mb-2">Foundation</h3>
-                            <p className="text-brand-gray">Alberto Puma starts the company with a single truck, focusing on high-end kitchen remodels in Newton.</p>
+                            <p className="text-brand-gray">Albert Puma starts the company with a single truck, focusing on high-end kitchen remodels in Newton.</p>
                         </div>
                         {/* 2012 */}
                         <div className="relative">
@@ -154,9 +154,9 @@ export const About: React.FC = () => {
                         {/* Team Member 1 */}
                         <div className="group">
                             <div className="aspect-[3/4] overflow-hidden rounded-sm mb-4">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Alberto Puma" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Albert Puma" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             </div>
-                            <h3 className="text-lg font-bold text-brand-navy">Alberto Puma</h3>
+                            <h3 className="text-lg font-bold text-brand-navy">Albert Puma</h3>
                             <div className="text-sm text-brand-gold uppercase tracking-widest">Principal</div>
                         </div>
                         {/* Team Member 2 */}
@@ -187,7 +187,7 @@ export const About: React.FC = () => {
 
                     <div className="mt-16 text-center">
                         <p className="text-brand-gray mb-6">Want to join a team that takes pride in the craft?</p>
-                        <Button variant="outline">View Career Openings</Button>
+                        <Button variant="outline-navy">View Career Openings</Button>
                     </div>
                 </div>
             </section>

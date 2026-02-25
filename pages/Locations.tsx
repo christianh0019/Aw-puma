@@ -1,6 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 export const Locations: React.FC = () => {
     const locations = [
@@ -26,7 +26,13 @@ export const Locations: React.FC = () => {
     ];
 
     return (
-        <div className="bg-white pt-32">
+        <div className="bg-white pt-24">
+            <SEO
+                title="Service Areas in Greater Boston & Metro West | A.W. Puma"
+                description="A.W. Puma serves Newton, Cambridge, Brookline, and the surrounding Massachusetts areas with premium home services."
+                keywords="home services service area, hvac plumbers Metro West, A.W. Puma locations, Newton HVAC, Cambridge plumber"
+                canonical="https://awpumahome.com/locations"
+            />
             <section className="bg-brand-navy text-white py-20 text-center">
                 <div className="max-w-7xl mx-auto px-4">
                     <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Areas We Serve</h1>

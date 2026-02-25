@@ -1,28 +1,27 @@
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, AlertTriangle, ShieldCheck, Thermometer, FileText, Star, Plus, Minus, Plug, Leaf } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
+import { SEO } from '../../components/SEO';
 
 export const EnergyAssessment: React.FC = () => {
     const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
     return (
         <div className="bg-white">
+            <SEO
+                title="Mass Save® Home Energy Audit Boston | Energy Efficiency"
+                description="Reduce your energy bills with a professional home energy assessment in Greater Boston. Learn about Mass Save® rebates and efficiency upgrades."
+                keywords="Mass Save® home energy audit, energy efficiency assessment, reduce energy bills, home energy audit Massachusetts"
+                canonical="https://awpumahome.com/services/energy-assessments"
+            />
             {/* 1. THE PROMISE (HERO) */}
-            <section className="relative min-h-[80vh] flex flex-col justify-center items-center pt-32">
-                <div className="absolute inset-0 z-0">
-                    <img
-                        src="https://images.unsplash.com/photo-1592833159057-65a284572b25?q=80&w=2070&auto=format&fit=crop"
-                        alt="Home Energy Efficiency"
-                        className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-brand-navy/85 mix-blend-multiply" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent opacity-90" />
-                </div>
+            <section className="relative min-h-[55vh] flex flex-col justify-center items-center pt-24 pb-16">
+                <div className="absolute inset-0 z-0" style={{ backgroundColor: '#153760' }} />
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 w-full text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-gold/20 border border-brand-gold/50 backdrop-blur-md mb-8">
                         <Leaf size={16} className="text-brand-gold" />
-                        <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">Mass Save® Certified Partner</span>
+                        <a href="http://masssave.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-brand-gold uppercase tracking-widest hover:underline">Mass Save® Certified Partner</a>
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-tight drop-shadow-2xl">
@@ -172,7 +171,7 @@ export const EnergyAssessment: React.FC = () => {
                             <div className="flex gap-1 mb-4">
                                 {[1, 2, 3, 4, 5].map(i => <Star key={i} className="fill-brand-gold text-brand-gold" size={16} />)}
                             </div>
-                            <p className="text-gray-200 italic mb-6">"The audit was free, and Mass Save paid for 75% of our attic insulation. The difference in comfort was immediate. The house stays warm all night now."</p>
+                            <p className="text-gray-200 italic mb-6">"The audit was free, and <a href="http://masssave.com/" target="_blank" rel="noopener noreferrer" className="underline decoration-brand-gold hover:text-brand-gold transition-colors">Mass Save®</a> paid for 75% of our attic insulation. The difference in comfort was immediate. The house stays warm all night now."</p>
                             <div className="font-bold">Karen D.</div>
                             <div className="text-sm text-gray-400">Somerville, MA • Weatherization</div>
                         </div>

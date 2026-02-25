@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { MapPin, ArrowRight, CheckCircle2, Phone, Shield, Clock, Star } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
 import { SERVICES } from '../../components/Navbar';
+import { SEO } from '../../components/SEO';
 
 // County data with descriptions and details
 export const COUNTY_DATA: Record<string, {
@@ -110,15 +111,15 @@ export const CountyLocation: React.FC = () => {
 
     return (
         <div className="bg-white">
+            <SEO
+                title={`${data.name} County Home Services | A.W. Puma`}
+                description={`Premium HVAC, plumbing, and electrical services across ${data.name} County. Serving ${data.cities.slice(0, 3).join(', ')}, and surrounding Massachusetts areas.`}
+                keywords={`regional home services, Massachusetts service area, local HVAC experts, ${data.name} County plumber`}
+                canonical={`https://awpumahome.com/locations/${county}`}
+            />
             {/* Hero */}
-            <section className="relative bg-brand-navy pt-32 pb-20">
-                <div className="absolute inset-0 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-navy/80" />
-                    <div className="absolute inset-0 opacity-5" style={{
-                        backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-                        backgroundSize: '32px 32px'
-                    }} />
-                </div>
+            <section className="relative min-h-[70vh] flex flex-col justify-center items-center pt-24 pb-16" style={{ backgroundColor: '#153760' }}>
+                <div className="absolute inset-0" />
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-orange/20 border border-brand-orange/40 backdrop-blur-md mb-8">
@@ -128,7 +129,7 @@ export const CountyLocation: React.FC = () => {
                         </span>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+                    <h1 className={`text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight ${county === 'norfolk' ? 'text-brand-orange' : 'text-white'}`}>
                         {data.tagline}
                     </h1>
 

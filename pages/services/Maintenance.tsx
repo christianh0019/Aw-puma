@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, AlertTriangle, ShieldCheck, Calendar, FileText, Star, Plus, Minus, Wrench } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
+import { SEO } from '../../components/SEO';
 
 export const Maintenance: React.FC = () => {
     const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
     return (
         <div className="bg-white">
+            <SEO
+                title="HVAC Maintenance Plans Boston | Preventative Service"
+                description="Protect your home systems with A.W. Puma's HVAC maintenance plans. Priority service and preventative care for your heating and cooling systems."
+                keywords="HVAC maintenance plans, priority home services, preventative maintenance, HVAC service contract Boston"
+                canonical="https://awpumahome.com/services/maintenance"
+            />
             {/* 1. THE PROMISE (HERO) */}
-            <section className="relative min-h-[80vh] flex flex-col justify-center items-center pt-32">
-                <div className="absolute inset-0 z-0">
-                    <img
-                        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop"
-                        alt="Property Maintenance"
-                        className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-brand-navy/85 mix-blend-multiply" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent opacity-90" />
-                </div>
+            <section className="relative min-h-[55vh] flex flex-col justify-center items-center pt-24 pb-16">
+                <div className="absolute inset-0 z-0" style={{ backgroundColor: '#153760' }} />
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 w-full text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-gold/20 border border-brand-gold/50 backdrop-blur-md mb-8">

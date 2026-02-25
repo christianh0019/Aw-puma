@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
-import { ArrowRight, MapPin, Building, Waves, FileQuestion, Download, Plus, Minus } from 'lucide-react';
+import { ArrowRight, MapPin, Building, Waves, FileQuestion, Download, Plus, Minus, Phone } from 'lucide-react';
 import { Button } from '../../components/ui/Button';
+import { SEO } from '../../components/SEO';
 
 export const NewtonLocation: React.FC = () => {
     const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
     return (
         <div className="bg-white">
+            <SEO
+                title="HVAC, Plumbing & Electrical Services Newton MA | A.W. Puma"
+                description="Premium home services in Newton, Massachusetts. From Newton Centre to Chestnut Hill, A.W. Puma provides expert HVAC, plumbing, and electrical solutions."
+                keywords="HVAC services Newton MA, plumber Newton, electrical contractor Newton Massachusetts, home remodeling Newton"
+                canonical="https://awpumahome.com/locations/newton"
+            />
             {/* 1. HERO SECTION (SOP-02: Section 1) */}
-            <section className="relative min-h-[70vh] flex flex-col justify-center items-center pt-32">
-                <div className="absolute inset-0 z-0">
-                    <img
-                        src="https://images.unsplash.com/photo-1549643276-fbc2cbd0289c?q=80&w=2070&auto=format&fit=crop"
-                        alt="Newton, MA Residential Street"
-                        className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-brand-navy/80 mix-blend-multiply" />
-                </div>
+            <section className="relative min-h-[70vh] flex flex-col justify-center items-center pt-24 pb-16">
+                <div className="absolute inset-0 z-0" style={{ backgroundColor: '#153760' }} />
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 w-full text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-gold/20 border border-brand-gold/50 backdrop-blur-md mb-8">
@@ -25,7 +25,6 @@ export const NewtonLocation: React.FC = () => {
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-tight drop-shadow-2xl">
-                        A.W. Puma <br />
                         <span className="text-brand-gold">Newton Construction</span>
                     </h1>
 
@@ -33,9 +32,16 @@ export const NewtonLocation: React.FC = () => {
                         From historic renovations in Newton Centre to modern additions in Waban. We know the code, the inspectors, and the soil.
                     </p>
 
-                    <Button size="lg" icon={<ArrowRight size={18} />}>
-                        Discuss Your Newton Project
-                    </Button>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Button size="lg" icon={<ArrowRight size={18} />}>
+                            Discuss Your Newton Project
+                        </Button>
+                        <a href="tel:6176183366">
+                            <Button size="lg" variant="navy" icon={<Phone size={18} />}>
+                                Call (617) 618-3366
+                            </Button>
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -106,7 +112,7 @@ export const NewtonLocation: React.FC = () => {
                                 References available in Waban, Oak Hill, and West Newton
                             </li>
                         </ul>
-                        <Button variant="outline">View Newton Portfolio</Button>
+                        <Button variant="outline-navy">View Newton Portfolio</Button>
                     </div>
                     <div className="h-[400px] bg-gray-300 rounded-sm overflow-hidden relative shadow-lg">
                         {/* Placeholder for Google Map Embed */}

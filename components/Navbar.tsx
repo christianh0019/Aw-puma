@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, ChevronDown, Flame, Wind, ThermometerSun, Snowflake, Construction, Droplets, ArrowRight, MapPin } from 'lucide-react';
+import { Menu, X, Phone, ChevronDown, Flame, Wind, ThermometerSun, Snowflake, Construction, Droplets, ArrowRight, MapPin, Hammer, Zap, Gauge, Wrench } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/Button';
 
@@ -11,6 +11,12 @@ export const SERVICES = [
   { name: 'Air Conditioner', href: '/services/ac', icon: Snowflake, description: 'Central AC installation & service', color: 'text-cyan-500', bgColor: 'bg-cyan-50' },
   { name: 'Boiler', href: '/services/boiler', icon: Construction, description: 'Boiler repair, replacement & maintenance', color: 'text-red-500', bgColor: 'bg-red-50' },
   { name: 'Water Heaters', href: '/services/water-heaters', icon: Droplets, description: 'Tankless & traditional water heater service', color: 'text-indigo-500', bgColor: 'bg-indigo-50' },
+  { name: 'Home Remodeling', href: '/services/remodeling', icon: Hammer, description: 'Custom carpentry and full-scale renovations', color: 'text-amber-600', bgColor: 'bg-amber-50' },
+  { name: 'HVAC', href: '/services/hvac', icon: Wind, description: 'Complete climate control solutions', color: 'text-sky-600', bgColor: 'bg-sky-50' },
+  { name: 'Plumbing', href: '/services/plumbing', icon: Droplets, description: 'Professional plumbing repairs & installations', color: 'text-blue-600', bgColor: 'bg-blue-50' },
+  { name: 'Electrical', href: '/services/electrical', icon: Zap, description: 'Licensed residential electrical services', color: 'text-yellow-500', bgColor: 'bg-yellow-50' },
+  { name: 'Energy Assessment', href: '/services/energy', icon: Gauge, description: 'Mass Save® audits and efficiency reports', color: 'text-green-600', bgColor: 'bg-green-50' },
+  { name: 'Maintenance', href: '/services/maintenance', icon: Wrench, description: 'Preventative care for all home systems', color: 'text-gray-600', bgColor: 'bg-gray-50' },
 ];
 
 export const Navbar: React.FC = () => {
@@ -37,13 +43,13 @@ export const Navbar: React.FC = () => {
   }, [mobileMenuOpen]);
 
   const locationLinks = [
-    { name: 'Suffolk County', href: '/locations/suffolk', description: 'Boston, Revere, Chelsea & more' },
-    { name: 'Middlesex County', href: '/locations/middlesex', description: 'Cambridge, Newton, Lowell & more' },
-    { name: 'Norfolk County', href: '/locations/norfolk', description: 'Brookline, Quincy, Braintree & more' },
-    { name: 'Plymouth County', href: '/locations/plymouth', description: 'Plymouth, Brockton, Hingham & more' },
-    { name: 'Essex County', href: '/locations/essex', description: 'Salem, Peabody, Newburyport & more' },
-    { name: 'Worcester County', href: '/locations/worcester', description: 'Worcester, Fitchburg, Shrewsbury & more' },
-    { name: 'Bristol County', href: '/locations/bristol', description: 'Fall River, New Bedford, Taunton & more' },
+    { name: 'Brookline, MA', href: '/locations/norfolk', description: 'Your local Brookline service experts' },
+    { name: 'Newton, MA', href: '/locations/newton', description: 'Our primary service hub in Newton Centre' },
+    { name: 'Boston, MA', href: '/locations/city/boston', description: 'Full-service HVAC & plumbing in the Hub' },
+    { name: 'Worcester, MA', href: '/locations/city/worcester', description: 'Expert home services in Central MA' },
+    { name: 'Cambridge, MA', href: '/locations/city/cambridge', description: 'Smart home solutions in Cambridge' },
+    { name: 'Brockton, MA', href: '/locations/city/brockton', description: 'Champion-level service in Brockton' },
+    { name: 'Lowell, MA', href: '/locations/city/lowell', description: 'Prompt home services in Lowell' },
   ];
 
   return (
@@ -99,7 +105,7 @@ export const Navbar: React.FC = () => {
                 {/* Mega Menu Dropdown */}
                 <div className="absolute top-full left-1/2 -translate-x-1/2 w-[700px] bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 border border-gray-100 overflow-hidden">
                   {/* Service Grid */}
-                  <div className="grid grid-cols-2 gap-1 p-4">
+                  <div className="grid grid-cols-3 gap-1 p-4">
                     {SERVICES.map((service) => (
                       <Link
                         key={service.name}
