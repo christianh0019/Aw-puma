@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, User } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { Button } from '../components/ui/Button';
 import { blogPosts } from '../data/blogPosts';
 
 export const BlogPost: React.FC = () => {
@@ -59,8 +60,31 @@ export const BlogPost: React.FC = () => {
             </div>
 
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="prose prose-lg prose-slate max-w-none">
+                <div className="prose prose-lg prose-slate max-w-none mb-16">
                     {post.content}
+                </div>
+
+                {/* Article Bottom CTA */}
+                <div className="bg-brand-navy rounded-2xl p-8 md:p-12 mb-16 text-center relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                    <div className="relative z-10">
+                        <h3 className="text-3xl font-serif font-bold text-white mb-4">Ready to Upgrade Your Home's Comfort?</h3>
+                        <p className="text-gray-300 mb-8 max-w-xl mx-auto text-lg">
+                            Take the first step toward a more efficient, comfortable home. Our experts are ready to help you find the perfect solution and maximize your rebates.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link to="/contact">
+                                <Button variant="primary" size="lg" className="w-full sm:w-auto shadow-lg shadow-brand-orange/20">
+                                    Get a Free Quote
+                                </Button>
+                            </Link>
+                            <a href="tel:6176183366">
+                                <Button variant="outline-white" size="lg" className="w-full sm:w-auto">
+                                    Call (617) 618-3366
+                                </Button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

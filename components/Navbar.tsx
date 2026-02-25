@@ -136,6 +136,9 @@ export const Navbar: React.FC = () => {
               <Link to="/contact" className="text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors px-4 py-2 rounded-md">
                 Contact
               </Link>
+              <Link to="/blog" className="text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors px-4 py-2 rounded-md">
+                Blog
+              </Link>
             </div>
 
             {/* CTA & Phone */}
@@ -241,6 +244,9 @@ export const Navbar: React.FC = () => {
             </Link>
             <Link to="/about" className="block py-3 text-lg font-bold text-brand-navy hover:text-brand-orange border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>
               About
+            </Link>
+            <Link to="/blog" className="block py-3 text-lg font-bold text-brand-navy hover:text-brand-orange border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>
+              Blog
             </Link>
             <Link to="/contact" className="block py-3 text-lg font-bold text-brand-navy hover:text-brand-orange border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>
               Contact
