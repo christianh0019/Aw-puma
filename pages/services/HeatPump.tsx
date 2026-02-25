@@ -1,205 +1,179 @@
-import React, { useState } from 'react';
-import { ArrowRight, CheckCircle2, ShieldCheck, ThermometerSun, FileText, Star, Plus, Minus, Home, Zap } from 'lucide-react';
+import React from 'react';
 import { Button } from '../../components/ui/Button';
 import { SEO } from '../../components/SEO';
+import { Link } from 'react-router-dom';
+import { ShieldCheck, Zap, ThermometerSnowflake, Wrench, MapPin, CheckCircle2 } from 'lucide-react';
 
 export const HeatPump: React.FC = () => {
-    const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
-
     return (
         <div className="bg-white">
             <SEO
-                title="Heat Pump Installation Massachusetts | Ductless Mini-Splits"
-                description="Save on energy bills with energy-efficient heat pump installation in Greater Boston. Expert ductless mini-split solutions for heating and cooling."
-                keywords="heat pump installation Massachusetts, ductless mini-splits, energy-efficient heating, heat pump repair Boston"
+                title="Heat Pump Installation & Repair Massachusetts | Up to $16,000 Rebates"
+                description="Expert heat pump installation and repair in Massachusetts. We provide 24/7 emergency heat pump repair and help you secure up to $16,000 in Mass Save rebates."
+                keywords="heat pump installation, heat pump repair Massachusetts, Mass Save rebates, electric heat pump, 24/7 HVAC repair"
                 canonical="https://awpumahome.com/services/heat-pumps"
             />
-            {/* 1. THE PROMISE (HERO) */}
-            <section className="relative min-h-[55vh] flex flex-col justify-center items-center pt-24 pb-16">
-                <div className="absolute inset-0 z-0" style={{ backgroundColor: '#153760' }} />
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 w-full text-center">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-gold/20 border border-brand-gold/50 backdrop-blur-md mb-8">
-                        <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">Year-Round Efficiency</span>
+            {/* HERO SECTION */}
+            <section className="relative min-h-[65vh] flex flex-col justify-center items-center pt-24 pb-20 overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop"
+                        alt="Modern home exterior"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-navy/80" />
+                </div>
+
+                <div className="relative z-10 max-w-5xl mx-auto px-4 w-full text-center">
+                    <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-navy/60 border border-brand-orange/50 shadow-[0_0_15px_rgba(255,107,0,0.3)] backdrop-blur-md mb-8">
+                        <ShieldCheck size={20} className="text-brand-orange" />
+                        <span className="text-sm font-bold text-white uppercase tracking-widest">Mass Save® Certified Installer</span>
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-tight drop-shadow-2xl">
-                        Clean Heating <br />
-                        <span className="text-brand-gold">& Cooling</span>
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-tight drop-shadow-2xl">
+                        Heat Pump Installation <br className="hidden md:block" />
+                        <span className="text-brand-gold">& Repair in Massachusetts</span>
                     </h1>
 
-                    <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
-                        Upgrade to a high-efficiency heat pump and enjoy whisper-quiet heating and cooling while saving thousands with Mass Save® rebates.
+                    <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed font-light">
+                        Looking for expert heat pump installation and repair in Massachusetts? We provide 24/7 emergency heat pump repair and high-efficiency electric heat pump installations across Suffolk, Middlesex, Norfolk, Plymouth, Essex, Worcester, and Bristol counties. Contact us today for a free estimate and up to $16,000 in Mass Save rebates!
                     </p>
 
+                    {/* Highly Visible Mobile & Desktop $16,000 Rebates Banner below hero text */}
+                    <div className="md:hidden bg-brand-orange/20 border border-brand-orange/50 rounded-lg p-4 mb-8 text-white font-bold text-lg">
+                        <Zap size={20} className="inline-block mr-2 text-brand-gold relative -top-0.5" />
+                        Up to $16,000 in Rebates
+                    </div>
+
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <Button size="lg" icon={<ArrowRight size={18} />}>
-                            Get $10k Rebate Quote
-                        </Button>
-                        <Button variant="outline" size="lg">
-                            How Heat Pumps Work
-                        </Button>
+                        <a href="tel:6176183366" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Call Now
+                            </button>
+                        </a>
+                        <Link to="/contact" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-[#10b981] hover:bg-[#059669] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Book Online
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>
 
-            {/* 2. THE EMPATHY LAYER (PAS) */}
-            <section className="py-24 bg-gray-50">
-                <div className="max-w-4xl mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">Transition to the Future of Home Comfort</h2>
-                        <p className="text-lg text-brand-gray leading-relaxed">
-                            Stop relying on volatile oil and gas prices. Modern heat pumps provide stable, electric-powered comfort even in the harshest New England winters.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-8 mb-12">
-                        <div className="bg-white p-8 rounded-sm shadow-sm border-l-4 border-brand-green">
-                            <div className="flex items-center gap-3 mb-4">
-                                <Zap className="text-brand-green" size={24} />
-                                <h3 className="text-xl font-bold text-brand-navy">High Energy Costs</h3>
-                            </div>
-                            <p className="text-brand-gray">
-                                Fossil fuel prices are unpredictable. Heat pumps offer superior efficiency, often providing 3 units of heat for every 1 unit of electricity used.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-sm shadow-sm border-l-4 border-brand-green">
-                            <div className="flex items-center gap-3 mb-4">
-                                <Home className="text-brand-green" size={24} />
-                                <h3 className="text-xl font-bold text-brand-navy">Uneven Temperatures</h3>
-                            </div>
-                            <p className="text-brand-gray">
-                                Ditch the drafty rooms. Heat pumps provide consistent, gentle airflow that eliminates hot and cold spots throughout your home.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="bg-brand-navy text-white p-8 rounded-sm text-center">
-                        <h3 className="text-2xl font-serif font-bold mb-4">The $10,000 Advantage</h3>
-                        <p className="text-gray-300 text-lg">
-                            As a Mass Save® participating contractor, we help you secure the maximum <strong>$10,000 whole-home rebate</strong> and 0% interest financing for your upgrade.
-                        </p>
-                    </div>
+            {/* UP TO $16K REBATES BANNER PROMINENTLY DISPLAYED - DESKTOP ONLY */}
+            <div className="bg-brand-navy border-b-4 border-brand-orange py-6 hidden md:block">
+                <div className="max-w-7xl mx-auto px-4 flex justify-around items-center text-white">
+                    <div className="flex items-center gap-3 font-bold text-2xl"><Zap size={32} className="text-brand-orange" /> Up to $16,000 in Rebates</div>
+                    <div className="w-px h-12 bg-white/20"></div>
+                    <div className="flex items-center gap-3 font-bold text-2xl"><Wrench size={32} className="text-brand-orange" /> 24/7 Emergency Repair</div>
                 </div>
-            </section>
+            </div>
 
-            {/* 3. THE COMPETENCE LAYER (3 PILLARS) */}
+            {/* SECTION 2: MASS SAVE */}
             <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <span className="text-brand-gold font-bold uppercase tracking-widest text-sm mb-2 block">Heat Pump Mastery</span>
-                        <h2 className="text-4xl font-serif font-bold text-brand-navy">Engineering The Perfect Climate</h2>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-12">
-                        {/* Pillar 1: Technical */}
-                        <div className="space-y-6">
-                            <div className="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center">
-                                <ThermometerSun className="text-brand-navy" size={32} />
+                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                        <div className="order-2 lg:order-1 relative">
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop" alt="Homeowner reviewing savings" className="w-full h-full object-cover" />
                             </div>
-                            <h3 className="text-2xl font-bold text-brand-navy">Hyper-Heat® Tech</h3>
-                            <ul className="space-y-3">
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Full heating capacity at -5°F</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Inverter-driven compressors</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Dual-fuel hybrid options</span>
-                                </li>
-                            </ul>
+                            <div className="absolute -bottom-10 -right-10 bg-brand-navy text-white p-8 rounded-2xl shadow-xl max-w-sm hidden md:block border border-white/10">
+                                <div className="text-4xl font-serif font-bold text-brand-gold mb-2">$16,000</div>
+                                <div className="font-bold text-xl mb-2">Mass Save® Rebates</div>
+                                <div className="text-gray-300 text-sm">Available for whole-home electric heat pump conversions.</div>
+                            </div>
                         </div>
-
-                        {/* Pillar 2: Financial */}
-                        <div className="space-y-6">
-                            <div className="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center">
-                                <FileText className="text-brand-navy" size={32} />
-                            </div>
-                            <h3 className="text-2xl font-bold text-brand-navy">Financial Incentives</h3>
-                            <ul className="space-y-3">
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>$10,000 Mass Save® Rebates</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>$2,000 Federal Tax Credits</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>0% Heat Loan assistance</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* Pillar 3: Regulatory */}
-                        <div className="space-y-6">
-                            <div className="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center">
-                                <ShieldCheck className="text-brand-navy" size={32} />
-                            </div>
-                            <h3 className="text-2xl font-bold text-brand-navy">Verified Excellence</h3>
-                            <ul className="space-y-3">
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Mass Save® Primary Installer</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>Certified Design Specialists</span>
-                                </li>
-                                <li className="flex gap-3 text-brand-gray">
-                                    <CheckCircle2 size={20} className="text-brand-gold shrink-0" />
-                                    <span>12-Year Warranty available</span>
-                                </li>
-                            </ul>
+                        <div className="order-1 lg:order-2">
+                            <span className="text-[#10b981] font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><Zap size={18} className="inline-block mb-1" /> Financial Incentives</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">Maximize Your Savings with 2026 Mass Save Heat Pump Rebates</h2>
+                            <p className="text-lg text-brand-gray leading-relaxed mb-6">
+                                Upgrade your home's comfort and significantly lower your energy bills. As a certified installer, we help Massachusetts homeowners secure up to <strong>$16,000 in 2026 Mass Save rebates</strong> for whole-home electric heat pump conversions.
+                            </p>
+                            <p className="text-lg text-brand-gray leading-relaxed mb-8">
+                                We handle the installations and guide you through the required paperwork so you can focus on the savings without the stress.
+                            </p>
+                            <Link to="/contact">
+                                <Button variant="primary" size="lg">Get Your Free Estimate</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* 6. THE DATA LAYER (FAQ) */}
-            <section className="py-24 bg-gray-50">
-                <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl font-serif font-bold text-brand-navy mb-12 text-center">Heat Pump FAQs</h2>
-                    <div className="space-y-4">
-                        {[
-                            { q: "Can a heat pump really replace my furnace in MA?", a: "Yes. Modern cold-climate heat pumps are designed to be the sole heating source for homes in the Northeast, providing efficient warmth even during sub-zero cold snaps." },
-                            { q: "How do I qualify for the $10,000 rebate?", a: "To receive the full whole-home rebate, you must transition your home's primary heating source to heat pumps. We assist with the audit and energy assessment required." },
-                            { q: "What is the lifespan of an air-source heat pump?", a: "With regular maintenance, a high-quality heat pump system typically lasts 15-20 years. They are robust systems designed for year-round operation." },
-                            { q: "Is a heat pump indoor unit noisy?", a: "No. Indoor units typically operate between 19-30 decibels, which is quieter than a whisper. The outdoor units are also significantly quieter than traditional central AC units." }
-                        ].map((faq, index) => (
-                            <div key={index} className="bg-white rounded-sm border border-gray-200">
-                                <button
-                                    className="w-full flex items-center justify-between p-6 text-left font-bold text-brand-navy focus:outline-none"
-                                    onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
-                                >
-                                    {faq.q}
-                                    {openFaqIndex === index ? <Minus size={20} className="text-brand-gold" /> : <Plus size={20} className="text-gray-400" />}
-                                </button>
-                                {openFaqIndex === index && (
-                                    <div className="p-6 pt-0 text-brand-gray leading-relaxed border-t border-gray-100">
-                                        {faq.a}
-                                    </div>
-                                )}
+            {/* SECTION 3: REPAIR & MAINTENANCE */}
+            <section className="py-24 bg-gray-50 border-y border-gray-200">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                        <div>
+                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><ThermometerSnowflake size={18} className="inline-block mb-1" /> 24/7 Emergency Service</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">Fast, Reliable Heat Pump Repair & Maintenance</h2>
+                            <p className="text-lg text-brand-gray leading-relaxed mb-6">
+                                Is your heat pump blowing cold air, icing up during a winter freeze, or making strange grinding noises? <strong>Don't wait.</strong>
+                            </p>
+                            <p className="text-lg text-brand-gray leading-relaxed mb-8">
+                                Our licensed HVAC technicians are on standby 24/7 to diagnose and fix your system fast. We carry parts for all major heat pump brands to restore your home's heat or air conditioning immediately.
+                            </p>
+
+                            <div className="flex flex-col sm:flex-row gap-4">
+                                <a href="tel:6176183366">
+                                    <button className="w-full sm:w-auto px-6 py-3 bg-brand-orange hover:bg-orange-600 text-white font-bold rounded-md transition-colors flex justify-center items-center gap-2">
+                                        <Wrench size={18} /> Request Emergency Repair
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative">
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg mt-8">
+                                    <img src="https://images.unsplash.com/photo-1621905252472-740e2ddf82e5?q=80&w=2069&auto=format&fit=crop" alt="HVAC Repair" className="w-full h-full object-cover" />
+                                </div>
+                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Technician inspecting system" className="w-full h-full object-cover" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 4: SERVICE AREAS */}
+            <section className="py-24 bg-brand-navy text-white">
+                <div className="max-w-5xl mx-auto px-4 text-center">
+                    <MapPin size={48} className="text-[#10b981] mx-auto mb-6" />
+                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Massachusetts Counties We Serve</h2>
+                    <p className="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto mb-12">
+                        We are proud to provide top-rated, rapid-response heat pump services to homeowners throughout the following areas:
+                    </p>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto">
+                        {["Suffolk County", "Middlesex County", "Norfolk County", "Plymouth County", "Essex County", "Worcester County", "Bristol County"].map((county, index) => (
+                            <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-4 flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
+                                <CheckCircle2 size={20} className="text-[#10b981] flex-shrink-0" />
+                                <span className="font-semibold text-lg">{county}</span>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* 7. SOFT CONVERSION (CTA) */}
-            <section className="py-20 bg-brand-light">
+            {/* BOTTOM CTA */}
+            <section className="py-24 bg-brand-light">
                 <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-serif font-bold text-brand-navy mb-6">Switch to Zero-Emission Comfort</h2>
-                    <p className="text-brand-gray mb-8">Join thousands of Massachusetts homeowners saving on energy with a premium heat pump installation.</p>
+                    <h2 className="text-4xl font-serif font-bold text-brand-navy mb-6">Ready for Zero-Emission Comfort?</h2>
+                    <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">Join the future of heating—without the stress. We handle the paperwork, you enjoy the savings.</p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <Button size="lg">Get My Rebate Assessment</Button>
-                        <Button variant="outline-navy" size="lg">View System Options</Button>
+                        <Link to="/contact" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-[#10b981] hover:bg-[#059669] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Book Online
+                            </button>
+                        </Link>
+                        <a href="tel:6176183366" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Call Now
+                            </button>
+                        </a>
                     </div>
                 </div>
             </section>
