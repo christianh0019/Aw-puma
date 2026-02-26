@@ -94,13 +94,8 @@ export const AirConditioner: React.FC = () => {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg mt-8">
-                                    <img src="https://images.unsplash.com/photo-1621905252472-740e2ddf82e5?q=80&w=2069&auto=format&fit=crop" alt="HVAC Repair Tools" className="w-full h-full object-cover" />
-                                </div>
-                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Technician inspecting system" className="w-full h-full object-cover" />
-                                </div>
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                                <img src="/images/ac/night-technician.jpg" alt="Technician examining a frozen AC condenser unit at night" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute -bottom-6 -left-6 bg-blue-900 p-6 rounded-xl shadow-xl border border-white/10 hidden md:block">
                                 <div className="flex items-center gap-4 text-white">
@@ -122,7 +117,7 @@ export const AirConditioner: React.FC = () => {
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
                             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                                <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=2070&auto=format&fit=crop" alt="Beautiful sunlit living room with comfortable cooling" className="w-full h-full object-cover" />
+                                <img src="/images/ac/hero-ac.jpg" alt="High efficiency modern central air conditioning condenser" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute -bottom-10 -right-10 bg-blue-50 p-8 rounded-2xl shadow-xl max-w-sm hidden md:block border border-blue-100">
                                 <div className="text-3xl font-serif font-bold text-brand-navy mb-2">Perfect Humidity</div>
