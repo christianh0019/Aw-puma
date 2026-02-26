@@ -18,8 +18,8 @@ export const WaterHeaters: React.FC = () => {
             <section className="relative min-h-[65vh] flex flex-col justify-center items-center pt-24 pb-20 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop"
-                        alt="Modern utility room highlighting high-end HVAC and water heating equipment"
+                        src="/images/waterheaters/hero-waterheater.jpg"
+                        alt="Technician repairing an electric water heater"
                         className="w-full h-full object-cover opacity-60"
                     />
                     <div className="absolute inset-0 bg-brand-navy/85" />
@@ -93,13 +93,8 @@ export const WaterHeaters: React.FC = () => {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg mt-8">
-                                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Technician inspecting utility system components" className="w-full h-full object-cover" />
-                                </div>
-                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                                    <img src="https://images.unsplash.com/photo-1621905252472-740e2ddf82e5?q=80&w=2069&auto=format&fit=crop" alt="HVAC Repair Tools" className="w-full h-full object-cover" />
-                                </div>
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                                <img src="/images/waterheaters/night-technician.jpg" alt="Technician inspecting equipment at night" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute -bottom-6 -left-6 bg-brand-navy p-6 rounded-xl shadow-xl border border-white/10 hidden md:block">
                                 <div className="flex items-center gap-4 text-white">
@@ -120,21 +115,9 @@ export const WaterHeaters: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
-                            {/* Side-by-side visual representation constructed with grid */}
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border border-gray-100 relative group">
-                                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=2070&auto=format&fit=crop" alt="Traditional Tank System" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
-                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                                        <span className="text-white font-bold text-sm tracking-widest uppercase">Traditional Tank</span>
-                                    </div>
-                                </div>
-                                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-2 border-brand-orange relative">
-                                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop" alt="Modern efficient box" className="w-full h-full object-cover" />
-                                    <div className="absolute top-4 right-4 bg-brand-orange text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">Upgrade</div>
-                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-navy/90 to-transparent p-4">
-                                        <span className="text-white font-bold text-sm tracking-widest uppercase">Tankless / Hybrid</span>
-                                    </div>
-                                </div>
+                            {/* Single image replacing the side-by-side grid */}
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl relative">
+                                <img src="/images/waterheaters/tankless-demo.jpg" alt="Technician showing tankless water heater controls to homeowner" className="w-full h-full object-cover" />
                             </div>
 
                             <div className="absolute -bottom-10 -right-4 bg-brand-light p-6 rounded-2xl shadow-xl max-w-[280px] hidden md:block border border-gray-200 z-10">
