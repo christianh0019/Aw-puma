@@ -18,8 +18,8 @@ export const MiniSplits: React.FC = () => {
             <section className="relative min-h-[65vh] flex flex-col justify-center items-center pt-24 pb-20 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2069&auto=format&fit=crop"
-                        alt="Sleek wall-mounted mini split in a beautifully furnished room"
+                        src="/images/minisplits/hero-minisplit.jpg"
+                        alt="Couple enjoying their sleek wall-mounted mini split in a beautifully furnished room"
                         className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-brand-navy/80" />
@@ -76,7 +76,7 @@ export const MiniSplits: React.FC = () => {
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
                             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                                <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?q=80&w=2070&auto=format&fit=crop" alt="Beautifully cooled living room" className="w-full h-full object-cover" />
+                                <img src="/images/minisplits/side-by-side.jpg" alt="Beautifully cooled living room with mini split" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute -bottom-10 -right-10 bg-brand-navy text-white p-8 rounded-2xl shadow-xl max-w-sm hidden md:block border border-white/10">
                                 <div className="text-3xl font-serif font-bold text-brand-gold mb-2">Room by Room</div>
@@ -124,13 +124,8 @@ export const MiniSplits: React.FC = () => {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg mt-8">
-                                    <img src="https://images.unsplash.com/photo-1621905252472-740e2ddf82e5?q=80&w=2069&auto=format&fit=crop" alt="HVAC Repair" className="w-full h-full object-cover" />
-                                </div>
-                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Technician inspecting system" className="w-full h-full object-cover" />
-                                </div>
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                                <img src="/images/minisplits/night-technician.jpg" alt="Technician inspecting mini split condenser at night" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
