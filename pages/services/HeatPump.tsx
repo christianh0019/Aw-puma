@@ -18,8 +18,8 @@ export const HeatPump: React.FC = () => {
             <section className="relative min-h-[65vh] flex flex-col justify-center items-center pt-24 pb-20 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop"
-                        alt="Modern home exterior"
+                        src="/images/heatpump/hero-house.jpg"
+                        alt="Modern home exterior with heat pump"
                         className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-brand-navy/80" />
@@ -76,7 +76,7 @@ export const HeatPump: React.FC = () => {
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
                             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop" alt="Homeowner reviewing savings" className="w-full h-full object-cover" />
+                                <img src="/images/heatpump/mass-save-family.jpg" alt="Family reviewing Mass Save savings" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute -bottom-10 -right-10 bg-brand-navy text-white p-8 rounded-2xl shadow-xl max-w-sm hidden md:block border border-white/10">
                                 <div className="text-4xl font-serif font-bold text-brand-gold mb-2">$16,000</div>
@@ -124,13 +124,8 @@ export const HeatPump: React.FC = () => {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg mt-8">
-                                    <img src="https://images.unsplash.com/photo-1621905252472-740e2ddf82e5?q=80&w=2069&auto=format&fit=crop" alt="HVAC Repair" className="w-full h-full object-cover" />
-                                </div>
-                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Technician inspecting system" className="w-full h-full object-cover" />
-                                </div>
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                                <img src="/images/heatpump/repairing-technician.jpg" alt="Technician repairing heat pump in winter" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
