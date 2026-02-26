@@ -1,6 +1,7 @@
 import React from 'react';
 import { SEO } from '../components/SEO';
 import { ServiceAreas } from '../components/ServiceAreas';
+import { FinalCTA } from '../components/FinalCTA';
 
 export const Locations: React.FC = () => {
     return (
@@ -12,6 +13,7 @@ export const Locations: React.FC = () => {
                 canonical="https://awpumahome.com/locations"
             />
             <ServiceAreas />
+            <FinalCTA />
         </div>
     );
 };
