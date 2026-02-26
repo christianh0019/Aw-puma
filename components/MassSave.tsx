@@ -56,7 +56,7 @@ export const MassSave: React.FC = () => {
                             </div>
 
                             <div>
-                                <Link to="/energy-assessment-mass-save">
+                                <Link to="/mass-save">
                                     <button className="inline-flex items-center justify-center w-full sm:w-auto gap-2 bg-brand-orange hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl text-lg">
                                         Learn About Mass Save® Rebates
                                         <ArrowRight size={20} />
