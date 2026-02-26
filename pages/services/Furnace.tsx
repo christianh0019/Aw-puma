@@ -18,7 +18,7 @@ export const Furnace: React.FC = () => {
             <section className="relative min-h-[65vh] flex flex-col justify-center items-center pt-24 pb-20 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop"
+                        src="/images/furnace/hero-furnace.jpg"
                         alt="Technician working on a furnace in a clean uniform"
                         className="w-full h-full object-cover"
                     />
@@ -95,13 +95,8 @@ export const Furnace: React.FC = () => {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg mt-8">
-                                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Technician inspecting furnace components" className="w-full h-full object-cover" />
-                                </div>
-                                <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                                    <img src="https://images.unsplash.com/photo-1621905252472-740e2ddf82e5?q=80&w=2069&auto=format&fit=crop" alt="HVAC Repair Tools" className="w-full h-full object-cover" />
-                                </div>
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                                <img src="/images/furnace/night-technician.jpg" alt="Technician arriving for emergency winter furnace repair" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute -bottom-6 -left-6 bg-brand-navy p-6 rounded-xl shadow-xl border border-white/10 hidden md:block">
                                 <div className="flex items-center gap-4 text-white">
@@ -123,7 +118,7 @@ export const Furnace: React.FC = () => {
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
                             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                                <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d04?q=80&w=2026&auto=format&fit=crop" alt="High efficiency modern furnace" className="w-full h-full object-cover" />
+                                <img src="/images/furnace/side-by-side.jpg" alt="Family experiencing efficient heating with a new furnace" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute -bottom-10 -right-10 bg-brand-light p-8 rounded-2xl shadow-xl max-w-sm hidden md:block border border-gray-200">
                                 <div className="text-3xl font-serif font-bold text-brand-navy mb-2">Lower Gas Bills</div>
