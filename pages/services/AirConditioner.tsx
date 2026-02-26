@@ -18,8 +18,8 @@ export const AirConditioner: React.FC = () => {
             <section className="relative min-h-[65vh] flex flex-col justify-center items-center pt-24 pb-20 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1542042161784-26ab9e041e89?q=80&w=2070&auto=format&fit=crop"
-                        alt="Happy family relaxing in a perfectly cooled, comfortable home living room"
+                        src="/images/ac/hero-ac.jpg"
+                        alt="High efficiency modern central air conditioning condenser next to home"
                         className="w-full h-full object-cover"
                     />
                     {/* Cool, refreshing color palette (blues and whites) overlay instead of navy */}
@@ -117,7 +117,7 @@ export const AirConditioner: React.FC = () => {
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
                             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                                <img src="/images/ac/hero-ac.jpg" alt="High efficiency modern central air conditioning condenser" className="w-full h-full object-cover" />
+                                <img src="/images/ac/tablet-ac.jpg" alt="Technician showing AC replacement options on a tablet to homeowner" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute -bottom-10 -right-10 bg-blue-50 p-8 rounded-2xl shadow-xl max-w-sm hidden md:block border border-blue-100">
                                 <div className="text-3xl font-serif font-bold text-brand-navy mb-2">Perfect Humidity</div>
