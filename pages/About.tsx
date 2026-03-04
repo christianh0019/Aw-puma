@@ -7,9 +7,9 @@ export const About: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title="About A.W. Puma Home Services | Building Trust Since 2005"
-                description="Learn about A.W. Puma's history and commitment to quality home services in Greater Boston. Our team of experts provides top-tier heating and cooling solutions."
-                keywords="about A.W. Puma, HVAC history Boston, professional contractors Massachusetts, A.W. Puma mission"
+                title="About A.W. Puma Home Services | HVAC & Mass Save Contractor"
+                description="Learn about A.W. Puma's history as a leading HVAC contractor in Greater Boston. Expert heat pump installation and Mass Save energy solutions."
+                keywords="about A.W. Puma, HVAC contractor Boston, Mass Save contractor Massachusetts, heat pump specialists, A.W. Puma mission"
                 canonical="https://awpumahome.com/about"
             />
             {/* 1. HERO SECTION */}
@@ -55,9 +55,16 @@ export const About: React.FC = () => {
                             </p>
                         </div>
 
-                        <div className="pt-6 border-t border-gray-100">
-                            <div className="font-serif text-2xl text-brand-navy">Albert Puma</div>
-                            <div className="text-sm text-brand-gray uppercase tracking-widest font-bold">Founder & Principal</div>
+                        <div className="pt-6 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <div className="font-serif text-2xl text-brand-navy">Albert Puma</div>
+                                <div className="text-sm text-brand-gray uppercase tracking-widest font-bold">Founder & Principal</div>
+                            </div>
+                            <img
+                                src="/images/mascots/mascot-standard.png"
+                                alt="AW Puma Mascot"
+                                className="w-24 h-auto opacity-80 group-hover:opacity-100 transition-opacity"
+                            />
                         </div>
                     </div>
                 </div>

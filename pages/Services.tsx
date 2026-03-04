@@ -6,9 +6,9 @@ export const Services: React.FC = () => {
     return (
         <div className="bg-white pt-24">
             <SEO
-                title="Expert Home Services in Boston | A.W. Puma"
-                description="Explore our full suite of premium home services including Furnace, AC, Heat Pump, Mini Splits, and Boiler systems. Quality craftsmanship guaranteed."
-                keywords="residential home services, hvac services Boston, air conditioning, furnace, boiler, mini-splits, heat pump"
+                title="HVAC & Mass Save Contractor Services | A.W. Puma"
+                description="Explore our full suite of HVAC services including heat pump installation, mini splits, and high-efficiency furnace systems. Licensed Mass Save Contractor."
+                keywords="HVAC contractor services, heat pump installation, mini splits, Mass Save contractor Massachusetts, home heating and cooling"
                 canonical="https://awpumahome.com/services"
             />
             <section className="bg-brand-navy text-white py-20 text-center">

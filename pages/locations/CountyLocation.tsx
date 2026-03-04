@@ -112,9 +112,9 @@ export const CountyLocation: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title={`${data.name} County Home Services | A.W. Puma`}
-                description={`Premium heating and cooling services across ${data.name} County. Serving ${data.cities.slice(0, 3).join(', ')}, and surrounding Massachusetts areas.`}
-                keywords={`regional home services, Massachusetts service area, local heating experts, ${data.name} County cooling`}
+                title={`Heat Pump Installation & HVAC Contractor ${data.name} County | A.W. Puma`}
+                description={`Premium heat pump installation and HVAC services across ${data.name} County. Your trusted Mass Save contractor serving ${data.cities.slice(0, 3).join(', ')}.`}
+                keywords={`heat pump installation ${data.name} County, HVAC contractor ${data.name} County, Mass Save contractor ${data.name}, mini splits ${data.name} County`}
                 canonical={`https://awpumahome.com/locations/${county}`}
             />
             {/* Hero */}

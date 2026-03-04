@@ -50,8 +50,7 @@ export const Hero: React.FC = () => {
 
             {/* Sub-headline */}
             <p className="text-base sm:text-lg text-gray-400 mb-10 max-w-lg leading-relaxed">
-              Heating, cooling, boilers, and more — trusted by Massachusetts homeowners for over 20 years.
-              One call handles it all.
+              Heat pump installation and energy-efficient heating and cooling upgrades for Massachusetts homeowners. One call handles it all.
             </p>
 
             {/* CTAs */}
@@ -85,8 +84,8 @@ export const Hero: React.FC = () => {
                   <Clock className="text-brand-orange" size={20} />
                 </div>
                 <div className="text-xs sm:text-sm">
-                  <div className="text-white font-bold">Same Day</div>
-                  <div className="text-gray-500 text-xs">Service</div>
+                  <div className="text-white font-bold">Mass Save®</div>
+                  <div className="text-gray-500 text-xs">Installer</div>
                 </div>
               </div>
               <div className="flex items-center gap-2 sm:gap-3">

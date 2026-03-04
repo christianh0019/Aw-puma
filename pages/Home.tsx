@@ -13,9 +13,9 @@ export const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title="A.W. Puma Home Services | Premium HVAC, Plumbing & Electrical"
-        description="Greater Boston's trusted partner for high-efficiency heating and cooling services. Always There. Always Fair."
-        keywords="premium heating cooling Boston, HVAC contractor Massachusetts, heating and cooling services, A.W. Puma Home Services, heat pump installation, central air repair"
+        title="Heat Pump Installation & Mini Splits | A.W. Puma HVAC Contractor"
+        description="Greater Boston's trusted Mass Save Contractor for heat pump installation and energy-efficient cooling. Always There. Always Fair."
+        keywords="heat pump installation, mini splits, HVAC contractor Massachusetts, Mass Save contractor, heating and cooling services, A.W. Puma Home Services"
         canonical="https://awpumahome.com/"
       />
       <Hero />

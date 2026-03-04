@@ -2,15 +2,36 @@ import React from 'react';
 import { Button } from '../../components/ui/Button';
 import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Droplets, Wrench, Flame, MapPin, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, Droplets, Wrench, Flame, MapPin, CheckCircle2, DollarSign } from 'lucide-react';
+import { ServiceAreas } from '../../components/ServiceAreas';
+import { FAQ } from '../../components/FAQ';
 
 export const WaterHeaters: React.FC = () => {
+    const waterHeaterFaqs = [
+        {
+            question: "How long should a typical water heater last?",
+            answer: "Standard tank-style water heaters usually last between 8–12 years. High-efficiency tankless models can last 20 years or more. If your unit is over 10 years old or showing signs of rust, it's a good idea to consider a proactive high-efficiency replacement."
+        },
+        {
+            question: "Should I upgrade to a heat pump water heater?",
+            answer: "Highly recommended! Heat pump water heaters are up to 3 times more efficient than standard electric tanks. In Massachusetts, they qualify for significant Mass Save® rebates which can often cover a large portion of the installation cost."
+        },
+        {
+            question: "What is a tankless water heater and is it right for me?",
+            answer: "Tankless systems heat water on demand rather than storing it in a large tank. They provide an endless supply of hot water, save significant space, and are more energy-efficient. They are ideal for larger families or homes where space is at a premium."
+        },
+        {
+            question: "Why is my water heater making a popping or rumbling sound?",
+            answer: "This is usually caused by sediment buildup at the bottom of the tank. As the water underneath the sediment boils, it pops through the layer of minerals. While flushing the tank can help, persistent noise in an older unit often indicates the tank is at risk of failing."
+        }
+    ];
+
     return (
         <div className="bg-white">
             <SEO
-                title="Water Heater Repair & Installation Massachusetts | A.W. Puma"
-                description="We install, repair, and flush traditional tank, tankless on-demand, and hybrid heat pump water heaters. 24/7 emergency service in MA."
-                keywords="water heater repair Massachusetts, tankless water heater installation, hot water heater replacement, hybrid heat pump water heater"
+                title="Water Heater Repair & Installation | HVAC Contractor MA"
+                description="Expert water heater repair and installation in Massachusetts. A.W. Puma is your trusted HVAC contractor for tankless and heat pump water heaters."
+                keywords="water heater repair Massachusetts, HVAC contractor, Mass Save contractor, tankless water heater installation, hybrid heat pump water heater"
                 canonical="https://awpumahome.com/services/water-heaters"
             />
 
@@ -75,8 +96,8 @@ export const WaterHeaters: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><ShieldCheck size={18} className="inline-block mb-1" /> Fast & Reliable</span>
-                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">24/7 Emergency Water Heater Repair</h2>
+                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><CheckCircle2 size={18} className="inline-block mb-1" /> Expert Performance</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">The High-Efficiency Advantage</h2>
                             <p className="text-lg text-brand-gray leading-relaxed mb-6">
                                 Woke up to a freezing cold shower or a flooded basement? We dispatch immediately to fix failing heating elements, faulty thermostats, and catastrophic tank leaks.
                             </p>
@@ -85,11 +106,11 @@ export const WaterHeaters: React.FC = () => {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <a href="tel:6176183366">
+                                <Link to="/contact">
                                     <button className="w-full sm:w-auto px-6 py-3 bg-brand-orange hover:bg-orange-600 text-white font-bold rounded-md transition-colors flex justify-center items-center gap-2">
-                                        <Wrench size={18} /> Fix My Water Heater
+                                        <Droplets size={18} /> Explore High-Efficiency Tankless
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="relative">
@@ -143,29 +164,11 @@ export const WaterHeaters: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: SERVICE AREAS */}
-            <section className="py-24 bg-brand-navy text-white">
-                <div className="max-w-5xl mx-auto px-4 text-center">
-                    <MapPin size={48} className="text-brand-orange mx-auto mb-6" />
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Massachusetts Counties We Serve</h2>
-                    <p className="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto mb-12">
-                        We provide rapid water heater repair and installation across:
-                    </p>
+            {/* SECTION 4: FAQ SECTION */}
+            <FAQ items={waterHeaterFaqs} />
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto mb-12">
-                        {["Suffolk County", "Middlesex County", "Norfolk County", "Plymouth County", "Essex County", "Worcester County", "Bristol County"].map((county, index) => (
-                            <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-4 flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
-                                <CheckCircle2 size={20} className="text-brand-gold flex-shrink-0" />
-                                <span className="font-semibold text-lg">{county}</span>
-                            </div>
-                        ))}
-                    </div>
-
-                    <Link to="/contact" className="inline-block">
-                        <Button variant="primary" size="lg">Check Service Availability</Button>
-                    </Link>
-                </div>
-            </section>
+            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
+            <ServiceAreas />
 
             {/* BOTTOM CTA */}
             <section className="py-24 bg-brand-light">
@@ -173,15 +176,15 @@ export const WaterHeaters: React.FC = () => {
                     <h2 className="text-4xl font-serif font-bold text-brand-navy mb-6">Restore Your Hot Water Fast</h2>
                     <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">From emergency tank leaks to high-efficiency tankless upgrades, our fully stocked trucks are ready to deploy.</p>
 
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Fix My Water Heater
-                            </button>
-                        </a>
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                         <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Get a Tankless Quote
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Free Installation Estimate
+                            </button>
+                        </Link>
+                        <Link to="/contact" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2 border border-white/20">
+                                <DollarSign size={20} /> View Mass Save Rebates
                             </button>
                         </Link>
                     </div>

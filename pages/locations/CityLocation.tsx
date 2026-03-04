@@ -182,10 +182,10 @@ export const CityLocation: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title={`Heating & Cooling Services ${data.name} MA | A.W. Puma`}
-                description={`Premium home services in ${data.name}, Massachusetts. Expert ${data.county} County heating and cooling solutions for local homeowners.`}
-                keywords={`heating services ${data.name} MA, AC ${data.name}, cooling contractor ${data.name} Massachusetts`}
-                canonical={`https://awpumahome.com/locations/city/${cityName}`}
+                title={`Heat Pump Installation & HVAC Contractor ${data.name} MA | A.W. Puma`}
+                description={`Premium heat pump installation, mini splits, and HVAC services in ${data.name}, Massachusetts. Your local Mass Save contractor.`}
+                keywords={`heat pump installation ${data.name}, mini splits ${data.name}, HVAC contractor ${data.name} MA, Mass Save ${data.name}, ${data.name} heating and cooling`}
+                canonical={`https://awpumahome.com/locations/${cityName}`}
             />
             {/* 1. HERO SECTION */}
             <section className="relative min-h-[70vh] flex flex-col justify-center items-center pt-24 pb-16">

@@ -11,7 +11,7 @@ export const MassSave: React.FC = () => {
 
                         {/* Left: Content */}
                         <div className="p-10 lg:p-14 flex flex-col justify-center">
-                            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-orange/10 text-brand-orange border border-brand-orange/20 text-xs font-bold uppercase tracking-widest mb-6 w-fit">
+                            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-green/10 text-brand-green border border-brand-green/20 text-xs font-bold uppercase tracking-widest mb-6 w-fit">
                                 <Leaf size={14} />
                                 Energy Savings
                             </div>
@@ -22,7 +22,7 @@ export const MassSave: React.FC = () => {
                                     href="https://www.masssave.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-brand-orange hover:text-orange-600 underline decoration-2 underline-offset-4"
+                                    className="text-brand-green hover:text-green-600 underline decoration-2 underline-offset-4"
                                 >
                                     Mass Save®
                                 </a>
@@ -36,17 +36,17 @@ export const MassSave: React.FC = () => {
 
                             <div className="grid grid-cols-2 gap-6 mb-10">
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center flex-shrink-0">
-                                        <DollarSign size={24} className="text-brand-orange" />
+                                    <div className="w-12 h-12 rounded-xl bg-brand-green/10 flex items-center justify-center flex-shrink-0">
+                                        <DollarSign size={24} className="text-brand-green" />
                                     </div>
                                     <div>
-                                        <div className="font-bold text-brand-navy text-lg">Up to $10,000</div>
+                                        <div className="font-bold text-brand-navy text-lg">Up to $8,500</div>
                                         <div className="text-sm text-brand-gray">In available rebates</div>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center flex-shrink-0">
-                                        <Zap size={24} className="text-brand-orange" />
+                                    <div className="w-12 h-12 rounded-xl bg-brand-green/10 flex items-center justify-center flex-shrink-0">
+                                        <Zap size={24} className="text-brand-green" />
                                     </div>
                                     <div>
                                         <div className="font-bold text-brand-navy text-lg">0% Financing</div>
@@ -57,7 +57,7 @@ export const MassSave: React.FC = () => {
 
                             <div>
                                 <Link to="/mass-save">
-                                    <button className="inline-flex items-center justify-center w-full sm:w-auto gap-2 bg-brand-orange hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl text-lg">
+                                    <button className="inline-flex items-center justify-center w-full sm:w-auto gap-2 bg-brand-green hover:bg-green-600 text-white font-bold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl text-lg">
                                         Learn About Mass Save® Rebates
                                         <ArrowRight size={20} />
                                     </button>
@@ -75,29 +75,29 @@ export const MassSave: React.FC = () => {
                                 <h3 className="text-3xl font-serif font-bold mb-8 text-white">Qualifying Equipment</h3>
                                 <ul className="space-y-4 text-lg text-gray-200">
                                     <li className="flex items-center gap-3">
-                                        <CheckCircle2 size={24} className="text-brand-gold flex-shrink-0" />
+                                        <CheckCircle2 size={24} className="text-brand-green flex-shrink-0" />
                                         Heat Pumps & Mini Splits
                                     </li>
                                     <li className="flex items-center gap-3">
-                                        <CheckCircle2 size={24} className="text-brand-gold flex-shrink-0" />
+                                        <CheckCircle2 size={24} className="text-brand-green flex-shrink-0" />
                                         High-Efficiency Furnaces
                                     </li>
                                     <li className="flex items-center gap-3">
-                                        <CheckCircle2 size={24} className="text-brand-gold flex-shrink-0" />
+                                        <CheckCircle2 size={24} className="text-brand-green flex-shrink-0" />
                                         Tankless Water Heaters
                                     </li>
                                     <li className="flex items-center gap-3">
-                                        <CheckCircle2 size={24} className="text-brand-gold flex-shrink-0" />
+                                        <CheckCircle2 size={24} className="text-brand-green flex-shrink-0" />
                                         High-Efficiency Boilers
                                     </li>
                                     <li className="flex items-center gap-3">
-                                        <CheckCircle2 size={24} className="text-brand-gold flex-shrink-0" />
+                                        <CheckCircle2 size={24} className="text-brand-green flex-shrink-0" />
                                         Smart Thermostats
                                     </li>
                                 </ul>
                                 <div className="mt-10 p-6 bg-white/10 rounded-xl border border-white/20 backdrop-blur-sm">
                                     <p className="font-bold text-white text-xl mb-1">We handle the paperwork.</p>
-                                    <p className="text-brand-gold text-lg">You get the savings.</p>
+                                    <p className="text-brand-green text-lg">You get the savings.</p>
                                 </div>
                             </div>
                         </div>

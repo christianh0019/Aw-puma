@@ -41,7 +41,7 @@ export const Testimonials: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/10">
             <div className="text-center px-4">
               <div className="text-4xl font-serif font-bold text-brand-orange mb-2">20+</div>
-              <div className="text-xs font-bold uppercase tracking-widest text-gray-300">Years Active</div>
+              <div className="text-xs font-bold uppercase tracking-widest text-gray-300">Years Experience</div>
             </div>
             <div className="text-center px-4">
               <div className="text-4xl font-serif font-bold text-brand-orange mb-2">5,000+</div>

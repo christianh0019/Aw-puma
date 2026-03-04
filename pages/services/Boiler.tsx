@@ -3,14 +3,35 @@ import { Button } from '../../components/ui/Button';
 import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Flame, Wrench, ArrowUpRight, Droplets, MapPin, CheckCircle2 } from 'lucide-react';
+import { ServiceAreas } from '../../components/ServiceAreas';
+import { FAQ } from '../../components/FAQ';
 
 export const Boiler: React.FC = () => {
+    const boilerFaqs = [
+        {
+            question: "How do I know if my boiler needs to be replaced?",
+            answer: "Key signs include rising energy bills, strange noises like banging or whistling (kettling), frequent leaks, or if your system is over 15 years old. Modern high-efficiency boilers are dramatically more reliable and less expensive to operate than older cast-iron models."
+        },
+        {
+            question: "What is the difference between steam and hot water boilers?",
+            answer: "Steam boilers heat water to a boil and send steam through pipes to radiators, while hot water (hydronic) boilers circulate heated water to baseboard heaters or underfloor systems. We specialize in both and understand the unique maintenance needs of each, especially in historic MA homes."
+        },
+        {
+            question: "Are high-efficiency boilers eligible for Mass Save® rebates?",
+            answer: "Yes! Many modern condensing boilers qualify for significant Mass Save® rebates and incentives. Our team stays updated on the latest state requirements to help you maximize your financial savings during a new installation."
+        },
+        {
+            question: "Why should I upgrade to a condensing boiler?",
+            answer: "Condensing boilers are significantly more efficient—often reaching 95%+ AFUE—because they capture heat from flue gases that would otherwise be wasted. This translates to substantial energy savings and a smaller carbon footprint for your home."
+        }
+    ];
+
     return (
         <div className="bg-white">
             <SEO
-                title="Boiler Repair & Replacement Massachusetts | Steam & Hot Water"
-                description="We specialize in hot water and steam boiler repair, maintenance, and high-efficiency boiler replacement in Massachusetts. 24/7 emergency boiler service."
-                keywords="boiler repair Massachusetts, steam boiler service, hot water boiler installation, high-efficiency boiler replacement"
+                title="Boiler Repair & Installation | HVAC & Mass Save Contractor MA"
+                description="Specializing in steam and hot water boiler services. A.W. Puma is your expert HVAC and Mass Save contractor for efficient heating."
+                keywords="boiler repair Massachusetts, HVAC contractor, Mass Save contractor, steam boiler service, high-efficiency boiler installation"
                 canonical="https://awpumahome.com/services/boilers"
             />
 
@@ -47,14 +68,14 @@ export const Boiler: React.FC = () => {
                     </div>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
+                        <Link to="/contact" className="w-full sm:w-auto">
                             <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Call for Emergency Boiler Repair
+                                Free Installation Estimate
                             </button>
-                        </a>
+                        </Link>
                         <Link to="/contact" className="w-full sm:w-auto">
                             <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2 border border-white/20">
-                                Schedule Boiler Service
+                                View Efficiency Rebates
                             </button>
                         </Link>
                     </div>
@@ -75,8 +96,8 @@ export const Boiler: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><Wrench size={18} className="inline-block mb-1" /> Licensed Experts</span>
-                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">24/7 Steam and Hydronic Boiler Repair</h2>
+                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><CheckCircle2 size={18} className="inline-block mb-1" /> Precision Engineering</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">The High-Efficiency Advantage</h2>
                             <p className="text-lg text-brand-gray leading-relaxed mb-6">
                                 Boiler leaking water or radiators refusing to heat up? From classic cast-iron radiators in historic Massachusetts homes to modern baseboard heating, we fix and maintain all boiler systems.
                             </p>
@@ -85,11 +106,11 @@ export const Boiler: React.FC = () => {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <a href="tel:6176183366">
+                                <Link to="/contact">
                                     <button className="w-full sm:w-auto px-6 py-3 bg-brand-orange hover:bg-orange-600 text-white font-bold rounded-md transition-colors flex justify-center items-center gap-2">
-                                        <Wrench size={18} /> Call For Emergency Repair
+                                        <ArrowUpRight size={18} /> Explore Efficient Boiler Models
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="relative">
@@ -141,29 +162,11 @@ export const Boiler: React.FC = () => {
                 </div>
             </section >
 
-            {/* SECTION 4: SERVICE AREAS */}
-            < section className="py-24 bg-brand-navy text-white" >
-                <div className="max-w-5xl mx-auto px-4 text-center">
-                    <MapPin size={48} className="text-brand-orange mx-auto mb-6" />
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Massachusetts Counties We Serve</h2>
-                    <p className="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto mb-12">
-                        We are the trusted boiler experts for homeowners in:
-                    </p>
+            {/* SECTION 4: FAQ SECTION */}
+            <FAQ items={boilerFaqs} />
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto mb-12">
-                        {["Suffolk County", "Middlesex County", "Norfolk County", "Plymouth County", "Essex County", "Worcester County", "Bristol County"].map((county, index) => (
-                            <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-4 flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
-                                <CheckCircle2 size={20} className="text-brand-gold flex-shrink-0" />
-                                <span className="font-semibold text-lg">{county}</span>
-                            </div>
-                        ))}
-                    </div>
-
-                    <Link to="/contact" className="inline-block">
-                        <Button variant="primary" size="lg">Check Service Availability</Button>
-                    </Link>
-                </div>
-            </section >
+            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
+            <ServiceAreas />
 
             {/* BOTTOM CTA */}
             < section className="py-24 bg-brand-light" >
@@ -172,14 +175,14 @@ export const Boiler: React.FC = () => {
                     <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">From historic steam radiators to modern baseboards, our experts are ready to restore your heat immediately.</p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
+                        <Link to="/contact" className="w-full sm:w-auto">
                             <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Call for Emergency Boiler Repair
+                                Free Installation Estimate
                             </button>
-                        </a>
+                        </Link>
                         <Link to="/contact" className="w-full sm:w-auto">
                             <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Schedule Boiler Service
+                                View Efficiency Rebates
                             </button>
                         </Link>
                     </div>

@@ -2,15 +2,36 @@ import React from 'react';
 import { Button } from '../../components/ui/Button';
 import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Wind, ThermometerSnowflake, Wrench, MapPin, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, Wind, ThermometerSnowflake, Wrench, MapPin, CheckCircle2, Zap, DollarSign } from 'lucide-react';
+import { ServiceAreas } from '../../components/ServiceAreas';
+import { FAQ } from '../../components/FAQ';
 
 export const MiniSplits: React.FC = () => {
+    const miniSplitFaqs = [
+        {
+            question: "Are mini splits good for whole-home heating and cooling in Massachusetts?",
+            answer: "Yes! Modern ductless mini splits are exceptionally efficient and provide precise 'zone control'—allowing you to heat or cool only the rooms you're using. This makes them a perfect solution for homes without existing ductwork, additions, or problematic hot/cold spots."
+        },
+        {
+            question: "How many indoor units can one outdoor unit support?",
+            answer: "Depending on the capacity of the outdoor condenser, a single multi-zone system can typically power between 2 and 8 indoor units. This allows for customized comfort across multiple bedrooms, living areas, and even home offices."
+        },
+        {
+            question: "Are there Mass Save® rebates for ductless mini splits?",
+            answer: "Absolutely. Mass Save® offers substantial rebates for high-efficiency mini split systems (especially when replacing electric baseboard or oil/propane systems). We'll help you navigate the equipment requirements to ensure your new system qualifies for the maximum incentives."
+        },
+        {
+            question: "Do mini splits require a lot of maintenance?",
+            answer: "Like any HVAC system, mini splits need annual professional maintenance. Additionally, we recommend that homeowners check and clean the reusable air filters every 1–3 months to maintain optimal airflow and indoor air quality."
+        }
+    ];
+
     return (
         <div className="bg-white">
             <SEO
-                title="Ductless Mini Split Installation & Repair Massachusetts | A.W. Puma"
-                description="Professional ductless mini split installation, maintenance, and emergency repair services throughout Massachusetts. Perfect for older homes without ductwork."
-                keywords="ductless mini split installation, mini split repair Massachusetts, ductless air conditioning, zoned heating and cooling"
+                title="Mini Split Installation | HVAC & Mass Save Contractor MA"
+                description="Professional ductless mini split installation and repair in Massachusetts. Your local HVAC contractor for zoned heating and cooling solutions."
+                keywords="mini split installation, ductless mini splits, HVAC contractor Massachusetts, Mass Save contractor, zoned AC repair"
                 canonical="https://awpumahome.com/services/mini-splits"
             />
 
@@ -47,14 +68,14 @@ export const MiniSplits: React.FC = () => {
                     </div>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Schedule Service Now
-                            </button>
-                        </a>
                         <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Get Your Free Quote
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Free Installation Estimate
+                            </button>
+                        </Link>
+                        <Link to="/contact" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2 border border-white/20">
+                                <DollarSign size={20} /> View Mass Save Rebates
                             </button>
                         </Link>
                     </div>
@@ -64,9 +85,9 @@ export const MiniSplits: React.FC = () => {
             {/* HIGH VISIBILITY BANNER PROMINENTLY DISPLAYED - DESKTOP ONLY */}
             <div className="bg-brand-navy border-b-4 border-brand-orange py-6 hidden md:block">
                 <div className="max-w-7xl mx-auto px-4 flex justify-around items-center text-white">
-                    <div className="flex items-center gap-3 font-bold text-2xl"><Wind size={32} className="text-brand-orange" /> No Ductwork Required</div>
+                    <div className="flex items-center gap-3 font-bold text-2xl"><Zap size={32} className="text-brand-orange" /> Energy Efficient Zoning</div>
                     <div className="w-px h-12 bg-white/20"></div>
-                    <div className="flex items-center gap-3 font-bold text-2xl"><ShieldCheck size={32} className="text-brand-orange" /> One-Day Installation</div>
+                    <div className="flex items-center gap-3 font-bold text-2xl"><ShieldCheck size={32} className="text-brand-orange" /> Mass Save® Partner</div>
                 </div>
             </div>
 
@@ -106,21 +127,21 @@ export const MiniSplits: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><Wrench size={18} className="inline-block mb-1" /> 24/7 Emergency Service</span>
-                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">24/7 Mini Split Repair & Maintenance</h2>
+                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><CheckCircle2 size={18} className="inline-block mb-1" /> Precision Performance</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">The High-Efficiency Advantage</h2>
                             <p className="text-lg text-brand-gray leading-relaxed mb-6">
-                                If your mini split is leaking water down the wall, freezing up on the outdoor unit, or simply failing to turn on, our expert technicians dispatch immediately.
+                                Why choose mini splits? They offer incredible flexibility. By providing <strong>localized comfort</strong>, you can avoid wasting energy on unoccupied rooms.
                             </p>
                             <p className="text-lg text-brand-gray leading-relaxed mb-8">
-                                We accurately diagnose airflow issues, fix refrigerant leaks, and replace blower motors on the first visit so you can get back to being comfortable.
+                                These systems are quiet, sleek, and exceptionally efficient—delivering the perfect temperature exactly where you need it, when you need it.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <a href="tel:6176183366">
-                                    <button className="w-full sm:w-auto px-6 py-3 bg-brand-orange hover:bg-orange-600 text-white font-bold rounded-md transition-colors flex justify-center items-center gap-2">
-                                        <Wrench size={18} /> Schedule Service Now
+                                <Link to="/contact">
+                                    <button className="w-full sm:w-auto px-6 py-3 bg-brand-orange hover:bg-orange-600 text-white font-bold rounded-md transition-colors flex justify-center items-center gap-2 shadow-md">
+                                        <Zap size={18} /> Explore Zoned Comfort
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="relative">
@@ -132,29 +153,11 @@ export const MiniSplits: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: SERVICE AREAS */}
-            <section className="py-24 bg-brand-navy text-white">
-                <div className="max-w-5xl mx-auto px-4 text-center">
-                    <MapPin size={48} className="text-brand-orange mx-auto mb-6" />
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Massachusetts Counties We Serve</h2>
-                    <p className="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto mb-12">
-                        Our fully stocked trucks are ready to service your ductless mini split systems in:
-                    </p>
+            {/* SECTION 4: FAQ SECTION */}
+            <FAQ items={miniSplitFaqs} />
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto mb-12">
-                        {["Suffolk County", "Middlesex County", "Norfolk County", "Plymouth County", "Essex County", "Worcester County", "Bristol County"].map((county, index) => (
-                            <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-4 flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
-                                <CheckCircle2 size={20} className="text-brand-gold flex-shrink-0" />
-                                <span className="font-semibold text-lg">{county}</span>
-                            </div>
-                        ))}
-                    </div>
-
-                    <Link to="/contact" className="inline-block">
-                        <Button variant="primary" size="lg">Check Service Availability</Button>
-                    </Link>
-                </div>
-            </section>
+            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
+            <ServiceAreas />
 
             {/* BOTTOM CTA */}
             <section className="py-24 bg-brand-light">
@@ -164,15 +167,15 @@ export const MiniSplits: React.FC = () => {
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Get Your Free Quote
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Free Installation Estimate
                             </button>
                         </Link>
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Schedule Service Now
+                        <Link to="/contact" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2 border border-white/20">
+                                View Efficiency Rebates
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>

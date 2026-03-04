@@ -9,9 +9,9 @@ export const NewtonLocation: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title="HVAC, Plumbing & Electrical Services Newton MA | A.W. Puma"
-                description="Premium home services in Newton, Massachusetts. From Newton Centre to Chestnut Hill, A.W. Puma provides expert heating and cooling solutions."
-                keywords="heating services Newton MA, AC Newton, cooling contractor Newton Massachusetts"
+                title="Heat Pump Installation & HVAC Contractor Newton MA | A.W. Puma"
+                description="Premium heat pump installation and HVAC services in Newton, Massachusetts. Your local Mass Save contractor for energy-efficient heating and cooling."
+                keywords="heat pump installation Newton MA, mini splits Newton, HVAC contractor Newton Massachusetts, Mass Save contractor Newton"
                 canonical="https://awpumahome.com/locations/newton"
             />
             {/* 1. HERO SECTION (SOP-02: Section 1) */}

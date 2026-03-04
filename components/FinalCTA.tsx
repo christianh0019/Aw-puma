@@ -19,7 +19,7 @@ export const FinalCTA: React.FC = () => {
           Ready to Get It Fixed Right?
         </h2>
         <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-          Stop searching. Whether it's heating, cooling, boiler repair, or any home service — A.W. Puma has you covered. Free estimates on new installations.
+          Stop Searching upgrade your current system to an energy efficient heat pump. A.W. Puma has you covered. Free estimates on new installations. Get Free Quote
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -37,7 +37,7 @@ export const FinalCTA: React.FC = () => {
         </div>
 
         <p className="mt-8 text-sm text-gray-400 font-medium">
-          No obligation. Same-day service available for emergencies.
+          No obligation. Free estimates on all new installations.
         </p>
       </div>
     </section>

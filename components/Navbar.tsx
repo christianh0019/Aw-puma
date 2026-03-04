@@ -5,12 +5,22 @@ import { Button } from './ui/Button';
 
 // Define services with icons for reuse in mega menu and elsewhere
 export const SERVICES = [
-  { name: 'Furnace', href: '/services/furnace', icon: Flame, description: 'High-efficiency furnace installation & repair', color: 'text-orange-500', bgColor: 'bg-orange-50' },
-  { name: 'Mini Splits', href: '/services/mini-splits', icon: Wind, description: 'Ductless heating & cooling solutions', color: 'text-blue-500', bgColor: 'bg-blue-50' },
   { name: 'Heat Pump', href: '/services/heat-pump', icon: ThermometerSun, description: 'Energy-efficient heat pump systems', color: 'text-green-500', bgColor: 'bg-green-50' },
+  { name: 'Mini Splits', href: '/services/mini-splits', icon: Wind, description: 'Ductless heating & cooling solutions', color: 'text-blue-500', bgColor: 'bg-blue-50' },
+  { name: 'Furnace', href: '/services/furnace', icon: Flame, description: 'High-efficiency furnace installation & repair', color: 'text-orange-500', bgColor: 'bg-orange-50' },
   { name: 'Air Conditioner', href: '/services/ac', icon: Snowflake, description: 'Central AC installation & service', color: 'text-cyan-500', bgColor: 'bg-cyan-50' },
   { name: 'Boiler', href: '/services/boiler', icon: Construction, description: 'Boiler repair, replacement & maintenance', color: 'text-red-500', bgColor: 'bg-red-50' },
   { name: 'Water Heaters', href: '/services/water-heaters', icon: Droplets, description: 'Tankless & traditional water heater service', color: 'text-indigo-500', bgColor: 'bg-indigo-50' },
+];
+
+export const LOCATIONS = [
+  { name: 'Plymouth County', href: '/locations/plymouth', description: 'Serving Brockton, Plymouth & more', icon: MapPin },
+  { name: 'Worcester County', href: '/locations/worcester', description: 'Serving Worcester & surrounding areas', icon: MapPin },
+  { name: 'Essex County', href: '/locations/essex', description: 'Serving Lawrence, Salem & north shore', icon: MapPin },
+  { name: 'Norfolk County', href: '/locations/norfolk', description: 'Serving Brookline, Quincy, Newton & more', icon: MapPin },
+  { name: 'Suffolk County', href: '/locations/suffolk', description: 'Serving Boston, Revere & Chelsea', icon: MapPin },
+  { name: 'Bristol County', href: '/locations/bristol', description: 'Serving New Bedford, Fall River & more', icon: MapPin },
+  { name: 'Middlesex County', href: '/locations/middlesex', description: 'Serving Cambridge, Lowell & more', icon: MapPin },
 ];
 
 export const Navbar: React.FC = () => {
@@ -72,7 +82,7 @@ export const Navbar: React.FC = () => {
               <img
                 src="/images/logos/text-logo-color.png"
                 alt="A.W. Puma Home Services"
-                className={`transition-all duration-300 ${isScrolled ? 'h-12' : 'h-16'}`}
+                className={`transition-all duration-300 ${isScrolled ? 'h-16' : 'h-24'}`}
               />
             </Link>
 
@@ -123,9 +133,49 @@ export const Navbar: React.FC = () => {
                 </div>
               </div>
 
-              <Link to="/locations" className="text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors px-4 py-2 rounded-md">
-                Locations
-              </Link>
+              {/* Locations with Dropdown */}
+              <div className="relative group">
+                <Link
+                  to="/locations"
+                  className="flex items-center gap-1 text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors px-4 py-2 rounded-md"
+                >
+                  Locations
+                  <ChevronDown size={14} className="group-hover:rotate-180 transition-transform" />
+                </Link>
+
+                {/* Locations Dropdown Menu */}
+                <div className="absolute top-full left-0 w-[550px] bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 border border-gray-100 overflow-hidden">
+                  <div className="grid grid-cols-2 gap-1 p-4">
+                    {LOCATIONS.map((location) => (
+                      <Link
+                        key={location.name}
+                        to={location.href}
+                        className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all duration-200 group/item"
+                      >
+                        <div className="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0 group-hover/item:scale-110 transition-transform duration-200">
+                          <location.icon size={20} className="text-brand-orange" />
+                        </div>
+                        <div>
+                          <div className="font-bold text-brand-navy text-sm group-hover/item:text-brand-orange transition-colors">
+                            {location.name}
+                          </div>
+                          <div className="text-xs text-brand-gray-light mt-0.5 leading-relaxed">
+                            {location.description}
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+
+                  {/* Locations Footer */}
+                  <div className="bg-gray-50 px-6 py-3 border-t border-gray-100 flex items-center justify-between">
+                    <span className="text-xs text-brand-gray-light">Don't see your town?</span>
+                    <Link to="/service-areas" className="inline-flex items-center text-brand-orange font-bold text-xs uppercase tracking-wide hover:underline">
+                      See Full Area Map <ArrowRight size={12} className="ml-1" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
 
               <Link to="/mass-save" className="text-sm font-semibold text-brand-navy hover:text-brand-orange transition-colors px-4 py-2 rounded-md">
                 Mass Save®
@@ -187,7 +237,7 @@ export const Navbar: React.FC = () => {
               <img
                 src="/images/logos/text-logo-color.png"
                 alt="A.W. Puma Home Services"
-                className="h-12"
+                className="h-20"
               />
             </Link>
             <button
@@ -235,9 +285,39 @@ export const Navbar: React.FC = () => {
               )}
             </div>
 
-            <Link to="/locations" className="block py-3 text-lg font-bold text-brand-navy hover:text-brand-orange border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>
-              Locations
-            </Link>
+            {/* Locations Accordion */}
+            <div className="border-b border-gray-100">
+              <div className="flex items-center justify-between py-3">
+                <span className="text-lg font-bold text-brand-navy">Locations</span>
+                <button
+                  onClick={() => setActiveDropdown(activeDropdown === 'locations' ? null : 'locations')}
+                  className="p-2 text-brand-gray"
+                  aria-label="Expand Locations"
+                >
+                  <ChevronDown size={20} className={`transform transition-transform ${activeDropdown === 'locations' ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
+              {activeDropdown === 'locations' && (
+                <div className="pb-3 space-y-1">
+                  {LOCATIONS.map((location) => (
+                    <Link
+                      key={location.name}
+                      to={location.href}
+                      className="flex items-center gap-3 px-2 py-2.5 rounded-lg hover:bg-gray-50 transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      <div className="w-9 h-9 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
+                        <location.icon size={18} className="text-brand-orange" />
+                      </div>
+                      <div>
+                        <div className="font-semibold text-brand-navy text-sm">{location.name}</div>
+                        <div className="text-xs text-brand-gray-light">{location.description}</div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
             <Link to="/mass-save" className="block py-3 text-lg font-bold text-brand-navy hover:text-brand-orange border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>
               Mass Save®
