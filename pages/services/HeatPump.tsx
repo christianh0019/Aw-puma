@@ -17,8 +17,8 @@ export const HeatPump: React.FC = () => {
             answer: "Yes! Whole-home electric heat pump conversions are becoming the standard for energy-conscious homeowners. A properly sized system can handle all your heating and cooling needs in a single, ultra-efficient unit, eliminating the need for fossil fuels."
         },
         {
-            question: "What is the $16,000 Mass Save® rebate?",
-            answer: "The $16,000 rebate is a state-level incentive for qualifying homeowners who switch to a whole-home electric heat pump system. As a certified contractor, we guide you through the required home energy audit and installation process to help you secure the maximum possible rebate."
+            question: "What are the maximum Mass Save® rebates?",
+            answer: "Mass Save® offers up to $10,000 in incentives for qualifying homeowners who switch to a whole-home electric heat pump system. As a certified contractor, we guide you through the required home energy audit and installation process to help you secure the maximum possible rebate."
         },
         {
             question: "Do heat pumps require a backup heating source?",
@@ -30,7 +30,7 @@ export const HeatPump: React.FC = () => {
         <div className="bg-white">
             <SEO
                 title="Heat Pump Installation | HVAC & Mass Save Contractor MA"
-                description="Expert heat pump installation and repair in Massachusetts. As a certified Mass Save Contractor, we help you secure up to $16,000 in rebates."
+                description="Expert heat pump installation and repair in Massachusetts. As a certified Mass Save Contractor, we help you secure up to $10,000 in rebates."
                 keywords="heat pump installation, HVAC contractor Massachusetts, Mass Save contractor, heat pump repair, energy efficient heating"
                 canonical="https://awpumahome.com/services/heat-pumps"
             />
@@ -58,13 +58,13 @@ export const HeatPump: React.FC = () => {
                     </h1>
 
                     <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed font-light">
-                        Looking for expert heat pump installation and repair in Massachusetts? We provide 24/7 emergency heat pump repair and high-efficiency electric heat pump installations across Suffolk, Middlesex, Norfolk, Plymouth, Essex, Worcester, and Bristol counties. Contact us today for a free estimate and up to $16,000 in Mass Save rebates!
+                        Looking for expert heat pump installation and repair in Massachusetts? We provide 24/7 emergency heat pump repair and high-efficiency electric heat pump installations across Suffolk, Middlesex, Norfolk, Plymouth, Essex, Worcester, and Bristol counties. Contact us today for a free estimate and up to $10,000 in Mass Save® rebates!
                     </p>
 
                     {/* Highly Visible Mobile & Desktop $16,000 Rebates Banner below hero text */}
                     <div className="md:hidden bg-brand-orange/20 border border-brand-orange/50 rounded-lg p-4 mb-8 text-white font-bold text-lg">
                         <Zap size={20} className="inline-block mr-2 text-brand-gold relative -top-0.5" />
-                        Up to $16,000 in Rebates
+                        Up to $10,000 in Rebates
                     </div>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -85,7 +85,7 @@ export const HeatPump: React.FC = () => {
             {/* UP TO $16K REBATES BANNER PROMINENTLY DISPLAYED - DESKTOP ONLY */}
             <div className="bg-brand-navy border-b-4 border-brand-orange py-6 hidden md:block">
                 <div className="max-w-7xl mx-auto px-4 flex justify-around items-center text-white">
-                    <div className="flex items-center gap-3 font-bold text-2xl"><Zap size={32} className="text-brand-orange" /> Up to $16,000 in Rebates</div>
+                    <div className="flex items-center gap-3 font-bold text-2xl"><Zap size={32} className="text-brand-orange" /> Up to $10,000 in Rebates</div>
                     <div className="w-px h-12 bg-white/20"></div>
                     <div className="flex items-center gap-3 font-bold text-2xl"><ShieldCheck size={32} className="text-brand-orange" /> Mass Save® Partner</div>
                 </div>
@@ -100,7 +100,7 @@ export const HeatPump: React.FC = () => {
                                 <img src="/images/heatpump/mass-save-family.jpg" alt="Family reviewing Mass Save savings" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute -bottom-10 -right-10 bg-brand-navy text-white p-8 rounded-2xl shadow-xl max-w-sm hidden md:block border border-white/10">
-                                <div className="text-4xl font-serif font-bold text-brand-gold mb-2">$16,000</div>
+                                <div className="text-4xl font-serif font-bold text-brand-gold mb-2">$10,000</div>
                                 <div className="font-bold text-xl mb-2">Mass Save® Rebates</div>
                                 <div className="text-gray-300 text-sm">Available for whole-home electric heat pump conversions.</div>
                             </div>
@@ -109,7 +109,7 @@ export const HeatPump: React.FC = () => {
                             <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><Zap size={18} className="inline-block mb-1" /> Financial Incentives</span>
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">Maximize Your Savings with 2026 Mass Save Heat Pump Rebates</h2>
                             <p className="text-lg text-brand-gray leading-relaxed mb-6">
-                                Upgrade your home's comfort and significantly lower your energy bills. As a certified installer, we help Massachusetts homeowners secure up to <strong>$16,000 in 2026 Mass Save rebates</strong> for whole-home electric heat pump conversions.
+                                Upgrade your home's comfort and significantly lower your energy bills. As a certified installer, we help Massachusetts homeowners secure up to <strong>$10,000 in 2026 Mass Save rebates</strong> for whole-home electric heat pump conversions.
                             </p>
                             <p className="text-lg text-brand-gray leading-relaxed mb-8">
                                 We handle the installations and guide you through the required paperwork so you can focus on the savings without the stress.

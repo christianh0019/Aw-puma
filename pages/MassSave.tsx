@@ -179,20 +179,20 @@ export const MassSave: React.FC = () => {
 
                             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors group">
                                 <div className="flex items-center gap-6">
-                                    <div className="text-5xl font-bold text-brand-orange">30% OFF</div>
+                                    <div className="text-5xl font-bold text-brand-orange">0%</div>
                                     <div>
-                                        <div className="text-2xl font-bold text-white uppercase tracking-wider">Tax Credit Savings</div>
-                                        <div className="text-gray-400">Federal incentives on energy-efficient upgrades</div>
+                                        <div className="text-2xl font-bold text-white uppercase tracking-wider">HEAT Loan</div>
+                                        <div className="text-gray-400">0% financing for up to 7 years on eligible upgrades</div>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="bg-brand-orange/10 border border-brand-orange/30 rounded-2xl p-8 transition-colors group">
                                 <div className="flex items-center gap-6">
-                                    <div className="text-5xl font-bold text-brand-orange">$16k+</div>
+                                    <div className="text-5xl font-bold text-brand-orange">$10k+</div>
                                     <div>
-                                        <div className="text-2xl font-bold text-white uppercase tracking-wider">Whole-Home Rebate</div>
-                                        <div className="text-gray-400">Maximum savings for comprehensive energy upgrades</div>
+                                        <div className="text-2xl font-bold text-white uppercase tracking-wider">Equipment Rebates</div>
+                                        <div className="text-gray-400">Maximum savings for high-efficiency heat pump conversions</div>
                                     </div>
                                 </div>
                             </div>

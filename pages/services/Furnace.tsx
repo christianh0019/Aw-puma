@@ -58,7 +58,7 @@ export const Furnace: React.FC = () => {
                     </h1>
 
                     <p className="text-xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
-                        Upgrade to a high-efficiency furnace and transform your home's comfort while slashing energy bills. Our expert HVAC technicians specialize in top-tier installation, ensuring you maximize Mass Save rebates of up to $16,000. Experience the precision and performance of the latest heating technology today.
+                        Upgrade to a high-efficiency furnace and transform your home's comfort while slashing energy bills. Our expert HVAC technicians specialize in top-tier installation, ensuring you maximize Mass Save rebates of up to $10,000. Experience the precision and performance of the latest heating technology today.
                     </p>
 
                     {/* Highly Visible Mobile & Desktop Banner below hero text */}

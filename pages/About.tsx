@@ -17,7 +17,7 @@ export const About: React.FC = () => {
                 <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">Building Trust, Not Just Houses.</h1>
                     <p className="text-xl text-brand-gold max-w-2xl mx-auto font-light">
-                        Since 2005, A.W. Puma has been the quiet force behind some of Greater Boston's most enduring homes.
+                        A.W. Puma Home Services was founded in late 2024 to bring honesty back to trades, building on a legacy of excellence that started with A.W. Puma Restoration in 2014.
                     </p>
                 </div>
             </section>
@@ -34,7 +34,7 @@ export const About: React.FC = () => {
                             />
                         </div>
                         <div className="absolute -bottom-6 -right-6 bg-brand-gold p-6 rounded-sm shadow-lg text-brand-navy hidden md:block">
-                            <div className="text-4xl font-bold">18+</div>
+                            <div className="text-4xl font-bold">10+</div>
                             <div className="text-sm font-bold uppercase tracking-wider">Years Active</div>
                         </div>
                     </div>
@@ -45,10 +45,10 @@ export const About: React.FC = () => {
 
                         <div className="prose prose-lg text-brand-gray">
                             <p>
-                                When I started A.W. Puma in 2005, the construction industry had a reputation problem. Hidden costs, ghosting contractors, and corners cut behind drywall. I wanted to build a company that was radically transparent.
+                                When I started A.W. Puma Restoration in 2014, the construction industry had a reputation problem. Hidden costs, ghosting contractors, and corners cut behind drywall. I wanted to build a company that was radically transparent.
                             </p>
                             <p>
-                                My promise to you is simple: <strong>Financial Honesty</strong>. You will see every invoice, every receipt, and every trade bid. We treat your budget with the same respect we treat your home.
+                                My promise to you is simple: <strong>Financial Honesty</strong>. We adhere to clear, transparent pricing without hidden fees or surprise costs. We treat your budget with the same respect we treat your home.
                             </p>
                             <p>
                                 This isn't just a business to me; it's my family name on the sign.
@@ -92,9 +92,9 @@ export const About: React.FC = () => {
                         {/* Value 2 */}
                         <div className="bg-white p-8 rounded-sm shadow-sm border-t-4 border-brand-navy">
                             <HeartHandshake className="w-12 h-12 text-brand-navy mb-6" />
-                            <h3 className="text-xl font-bold text-brand-navy mb-3">Radical Transparency</h3>
+                            <h3 className="text-xl font-bold text-brand-navy mb-3">Radical Honesty</h3>
                             <p className="text-brand-gray">
-                                Our clients see the raw bids from subcontractors. We don't markup materials without telling you. Our fixed-fee structure aligns our incentives with yours.
+                                We believe in clear, upfront pricing without hidden fees or surprise costs. Our fixed-fee structure aligns our incentives with yours, ensuring you know exactly what you're paying for.
                             </p>
                         </div>
                         {/* Value 3 */}
@@ -117,33 +117,33 @@ export const About: React.FC = () => {
                     </div>
 
                     <div className="space-y-12 border-l-2 border-gray-200 ml-6 md:ml-auto pl-8 relative">
-                        {/* 2005 */}
+                        {/* 2014 */}
                         <div className="relative">
                             <div className="absolute -left-[43px] top-1 w-6 h-6 rounded-full bg-brand-gold border-4 border-white shadow-sm"></div>
-                            <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">2005</span>
+                            <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">2014</span>
                             <h3 className="text-2xl font-bold text-brand-navy mb-2">Foundation</h3>
-                            <p className="text-brand-gray">Albert Puma starts the company with a single truck, focusing on high-end heating and cooling installations in Newton.</p>
-                        </div>
-                        {/* 2012 */}
-                        <div className="relative">
-                            <div className="absolute -left-[43px] top-1 w-6 h-6 rounded-full bg-brand-navy border-4 border-white shadow-sm"></div>
-                            <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">2012</span>
-                            <h3 className="text-2xl font-bold text-brand-navy mb-2">Expansion to Commercial</h3>
-                            <p className="text-brand-gray">The company completes its first major restaurant build-out in Boston's North End, proving our ability to hit strict deadlines.</p>
+                            <p className="text-brand-gray">Albert Puma starts A.W. Puma Restoration with a commitment to unwavering quality and craftsmanship in home renovations.</p>
                         </div>
                         {/* 2018 */}
                         <div className="relative">
                             <div className="absolute -left-[43px] top-1 w-6 h-6 rounded-full bg-brand-navy border-4 border-white shadow-sm"></div>
                             <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">2018</span>
                             <h3 className="text-2xl font-bold text-brand-navy mb-2">Best of Boston</h3>
-                            <p className="text-brand-gray">Awarded "Best Renovation Contractor" by local industry peers for our work on historic Victorian restorations.</p>
+                            <p className="text-brand-gray">Awarded "Best Renovation Contractor" by local industry peers for our work on historic restorations.</p>
                         </div>
                         {/* 2024 */}
                         <div className="relative">
                             <div className="absolute -left-[43px] top-1 w-6 h-6 rounded-full bg-brand-navy border-4 border-white shadow-sm"></div>
+                            <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">Late 2024</span>
+                            <h3 className="text-2xl font-bold text-brand-navy mb-2">A.W. Puma Home Services</h3>
+                            <p className="text-brand-gray">A.W. Puma Home Services is officially started to bring the same level of honesty, transparency, and excellence to the HVAC and home services trades.</p>
+                        </div>
+                        {/* Today */}
+                        <div className="relative">
+                            <div className="absolute -left-[43px] top-1 w-6 h-6 rounded-full bg-brand-navy border-4 border-white shadow-sm"></div>
                             <span className="text-sm font-bold text-brand-gold uppercase tracking-widest">Today</span>
-                            <h3 className="text-2xl font-bold text-brand-navy mb-2">Full-Service Design Build</h3>
-                            <p className="text-brand-gray">Now a team of 15+, managing multi-million dollar custom climate control builds and comprehensive system maintenance plans across Greater Boston.</p>
+                            <h3 className="text-2xl font-bold text-brand-navy mb-2">Full-Service Home Experts</h3>
+                            <p className="text-brand-gray">Now a growing team, managing custom climate control builds, comprehensive system maintenance, and premium home services across Greater Boston.</p>
                         </div>
                     </div>
                 </div>
