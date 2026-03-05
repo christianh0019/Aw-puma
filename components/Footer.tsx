@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
             </p>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/awpumahomeservices" target="_blank" rel="noopener noreferrer" className="bg-white/5 p-2 rounded-full hover:bg-brand-gold hover:text-white transition-all"><Facebook size={18} /></a>
-              <a href="#" className="bg-white/5 p-2 rounded-full hover:bg-brand-gold hover:text-white transition-all"><Instagram size={18} /></a>
+              <a href="https://www.instagram.com/awpuma_restoration/" target="_blank" rel="noopener noreferrer" className="bg-white/5 p-2 rounded-full hover:bg-brand-gold hover:text-white transition-all"><Instagram size={18} /></a>
             </div>
           </div>
 
@@ -76,6 +76,6 @@ export const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
