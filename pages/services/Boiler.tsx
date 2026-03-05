@@ -155,7 +155,7 @@ export const Boiler: React.FC = () => {
                                 We handle the removal of your old heavy tank and ensure all piping meets strict local plumbing codes.
                             </p>
                             <Link to="/contact">
-                                <Button variant="primary" size="lg">Schedule Boiler Service</Button>
+                                <Button variant="primary" size="lg">Get A Free Quote</Button>
                             </Link>
                         </div>
                     </div>

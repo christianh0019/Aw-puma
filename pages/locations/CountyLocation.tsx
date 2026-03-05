@@ -140,7 +140,7 @@ export const CountyLocation: React.FC = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link to="/contact">
                             <Button size="lg" variant="primary" icon={<ArrowRight size={18} />}>
-                                Schedule Service in {data.name}
+                                Get A Free Quote
                             </Button>
                         </Link>
                         <a href="tel:6176183366">

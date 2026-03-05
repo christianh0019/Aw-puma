@@ -4,8 +4,8 @@ import { Phone, ClipboardCheck, Wrench, ThumbsUp } from 'lucide-react';
 const steps = [
   {
     icon: Phone,
-    title: "1. Call or Book Online",
-    desc: "Tell us what's going on — we'll ask the right questions and schedule a visit at your convenience. No runarounds."
+    title: "1. Call or Contact Us",
+    desc: "Tell us what's going on — we'll ask the right questions and set up a visit at your convenience. No runarounds."
   },
   {
     icon: ClipboardCheck,
