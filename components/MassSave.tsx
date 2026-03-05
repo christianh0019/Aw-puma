@@ -71,7 +71,10 @@ export const MassSave: React.FC = () => {
                             <div className="absolute inset-0 opacity-5" style={{
                                 backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")`,
                             }} />
-                            <div className="relative z-10">
+                            <div className="relative z-10 w-full">
+                                <div className="bg-white w-fit px-6 py-4 rounded-xl mb-8 shadow-lg inline-block">
+                                    <img src="/images/logos/mass-save-partner-color.png" alt="Mass Save Partner" className="h-16 w-auto object-contain" />
+                                </div>
                                 <h3 className="text-3xl font-serif font-bold mb-8 text-white">Qualifying Equipment</h3>
                                 <ul className="space-y-4 text-lg text-gray-200">
                                     <li className="flex items-center gap-3">

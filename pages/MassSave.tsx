@@ -23,11 +23,13 @@ export const MassSave: React.FC = () => {
                             <Leaf size={16} className="text-green-400" />
                             <span className="text-sm font-bold text-green-400 uppercase tracking-widest">Participating Contractor</span>
                         </div>
-                        <img
-                            src="/images/logos/mass-save-partner.png"
-                            alt="Mass Save Partner"
-                            className="h-12 w-auto brightness-0 invert opacity-90"
-                        />
+                        <div className="bg-white px-5 py-3 rounded-xl shadow-lg inline-block">
+                            <img
+                                src="/images/logos/mass-save-partner-color.png"
+                                alt="Mass Save Partner"
+                                className="h-10 sm:h-12 w-auto object-contain"
+                            />
+                        </div>
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight text-white mb-6 leading-tight">
@@ -203,7 +205,9 @@ export const MassSave: React.FC = () => {
                                         Claim Your Rebate Now
                                     </Button>
                                 </Link>
-                                <img src="/images/logos/mass-save-partner.png" alt="Mass Save Partner" className="h-16 w-auto brightness-0 invert" />
+                                <div className="bg-white px-6 py-4 rounded-xl shadow-lg mt-4 sm:mt-0">
+                                    <img src="/images/logos/mass-save-partner-color.png" alt="Mass Save Partner" className="h-14 w-auto object-contain" />
+                                </div>
                             </div>
                         </div>
 
