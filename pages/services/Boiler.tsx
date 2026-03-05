@@ -4,7 +4,7 @@ import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Flame, Wrench, ArrowUpRight, Droplets, MapPin, CheckCircle2 } from 'lucide-react';
 import { ServiceAreas } from '../../components/ServiceAreas';
-import { FAQ } from '../../components/FAQ';
+import { GlobalBottomSections } from '../../components/GlobalBottomSections';
 
 export const Boiler: React.FC = () => {
     const boilerFaqs = [
@@ -162,32 +162,11 @@ export const Boiler: React.FC = () => {
                 </div>
             </section >
 
-            {/* SECTION 4: FAQ SECTION */}
-            <FAQ items={boilerFaqs} />
-
-            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
+            {/* SECTION 4: SERVICE AREAS (Interactive Map) */}
             <ServiceAreas />
 
-            {/* BOTTOM CTA */}
-            < section className="py-24 bg-brand-light" >
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-serif font-bold text-brand-navy mb-6">Don't Get Left in the Cold</h2>
-                    <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">From historic steam radiators to modern baseboards, our experts are ready to restore your heat immediately.</p>
-
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Free Installation Estimate
-                            </button>
-                        </Link>
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                View Efficiency Rebates
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </section >
+            {/* GLOBAL BOTTOM SECTIONS (Testimonials, Mass Save FAQ, Final CTA) */}
+            <GlobalBottomSections />
         </div >
     );
 };

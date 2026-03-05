@@ -4,27 +4,9 @@ import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Droplets, Wrench, Flame, MapPin, CheckCircle2, DollarSign } from 'lucide-react';
 import { ServiceAreas } from '../../components/ServiceAreas';
-import { FAQ } from '../../components/FAQ';
+import { GlobalBottomSections } from '../../components/GlobalBottomSections';
 
 export const WaterHeaters: React.FC = () => {
-    const waterHeaterFaqs = [
-        {
-            question: "How long should a typical water heater last?",
-            answer: "Standard tank-style water heaters usually last between 8–12 years. High-efficiency tankless models can last 20 years or more. If your unit is over 10 years old or showing signs of rust, it's a good idea to consider a proactive high-efficiency replacement."
-        },
-        {
-            question: "Should I upgrade to a heat pump water heater?",
-            answer: "Highly recommended! Heat pump water heaters are up to 3 times more efficient than standard electric tanks. In Massachusetts, they qualify for significant Mass Save® rebates which can often cover a large portion of the installation cost."
-        },
-        {
-            question: "What is a tankless water heater and is it right for me?",
-            answer: "Tankless systems heat water on demand rather than storing it in a large tank. They provide an endless supply of hot water, save significant space, and are more energy-efficient. They are ideal for larger families or homes where space is at a premium."
-        },
-        {
-            question: "Why is my water heater making a popping or rumbling sound?",
-            answer: "This is usually caused by sediment buildup at the bottom of the tank. As the water underneath the sediment boils, it pops through the layer of minerals. While flushing the tank can help, persistent noise in an older unit often indicates the tank is at risk of failing."
-        }
-    ];
 
     return (
         <div className="bg-white">
@@ -164,32 +146,11 @@ export const WaterHeaters: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: FAQ SECTION */}
-            <FAQ items={waterHeaterFaqs} />
-
-            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
+            {/* SECTION 4: SERVICE AREAS (Interactive Map) */}
             <ServiceAreas />
 
-            {/* BOTTOM CTA */}
-            <section className="py-24 bg-brand-light">
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-serif font-bold text-brand-navy mb-6">Restore Your Hot Water Fast</h2>
-                    <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">From emergency tank leaks to high-efficiency tankless upgrades, our fully stocked trucks are ready to deploy.</p>
-
-                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Free Installation Estimate
-                            </button>
-                        </Link>
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2 border border-white/20">
-                                <DollarSign size={20} /> View Mass Save Rebates
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            {/* GLOBAL BOTTOM SECTIONS */}
+            <GlobalBottomSections />
         </div>
     );
 };

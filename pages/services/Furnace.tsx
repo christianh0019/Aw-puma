@@ -4,27 +4,9 @@ import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Flame, Wrench, ThermometerSnowflake, DollarSign, MapPin, CheckCircle2 } from 'lucide-react';
 import { ServiceAreas } from '../../components/ServiceAreas';
-import { FAQ } from '../../components/FAQ';
+import { GlobalBottomSections } from '../../components/GlobalBottomSections';
 
 export const Furnace: React.FC = () => {
-    const furnaceFaqs = [
-        {
-            question: "How do I know if my furnace needs to be replaced?",
-            answer: "If your furnace is over 15–20 years old, requires frequent repairs, or your energy bills are rising despite normal use, it's likely time for a replacement. Signs like uneven heating, strange noises, or a yellow burner flame also indicate it's reaching the end of its lifespan."
-        },
-        {
-            question: "What is AFUE and why does it matter?",
-            answer: "AFUE stands for Annual Fuel Utilization Efficiency. It measures how efficiently a furnace converts fuel into heat. A 98% AFUE rating means 98 cents of every dollar spent on fuel becomes heat for your home, with only 2% escaping through the vent. High-efficiency models significantly lower operating costs."
-        },
-        {
-            question: "Are gas furnaces eligible for Mass Save® rebates?",
-            answer: "Yes, many high-efficiency gas furnaces are eligible for Mass Save® rebates. However, state incentives are increasingly favoring heat pump technology for whole-home heating. We'll help you navigate the latest rebate requirements to ensure you get the maximum savings possible."
-        },
-        {
-            question: "How often should I have my furnace professionally serviced?",
-            answer: "We recommend professional maintenance at least once a year, ideally in the fall before the heavy heating season begins. Regular tuning preserves your warranty, prevents mid-winter breakdowns, and maintains peak efficiency."
-        }
-    ];
 
     return (
         <div className="bg-white">
@@ -164,32 +146,11 @@ export const Furnace: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: FAQ SECTION */}
-            <FAQ items={furnaceFaqs} />
-
-            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
+            {/* SECTION 4: SERVICE AREAS (Interactive Map) */}
             <ServiceAreas />
 
-            {/* BOTTOM CTA */}
-            <section className="py-24 bg-brand-light">
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-serif font-bold text-brand-navy mb-6">Invest in Year-Round Comfort</h2>
-                    <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">Don't wait for a mid-winter breakdown. Upgrade to a high-efficiency system today and start saving on every utility bill. Our experts are ready to design your perfect heating solution.</p>
-
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Get Your Free Estimate
-                            </button>
-                        </a>
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Get a Replacement Estimate
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            {/* GLOBAL BOTTOM SECTIONS */}
+            <GlobalBottomSections />
         </div>
     );
 };

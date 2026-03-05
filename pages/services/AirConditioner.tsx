@@ -4,27 +4,9 @@ import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Wind, Snowflake, Wrench, ThermometerSnowflake, Ruler, MapPin, CheckCircle2 } from 'lucide-react';
 import { ServiceAreas } from '../../components/ServiceAreas';
-import { FAQ } from '../../components/FAQ';
+import { GlobalBottomSections } from '../../components/GlobalBottomSections';
 
 export const AirConditioner: React.FC = () => {
-    const acFaqs = [
-        {
-            question: "How long does a typical central AC unit last in Massachusetts?",
-            answer: "Most central air conditioning systems last between 15–20 years with proper annual maintenance. However, factors like coastal salt air or heavy summer usage can affect this lifespan. If your unit is over 15 years old, a proactive high-efficiency upgrade is often more cost-effective than a major repair."
-        },
-        {
-            question: "Why is my AC unit frozen or icing up?",
-            answer: "Icing is usually caused by restricted airflow (dirty filters or blocked vents) or low refrigerant levels. If you see ice on your indoor or outdoor unit, turn it off immediately to prevent compressor damage and contact a professional to diagnose the root cause."
-        },
-        {
-            question: "Are there rebates for installing a high-efficiency AC?",
-            answer: "Yes! Mass Save® offers significant rebates for central air conditioning systems that meet specific energy efficiency ratings (SEER2/EER2). We'll guide you through the latest equipment requirements to ensure your new system qualifies for the maximum available financial incentives."
-        },
-        {
-            question: "What's the best way to improve my AC's efficiency?",
-            answer: "Beyond annual professional tuning, the best ways to improve efficiency are replacing air filters monthly, using a programmable thermostat, and ensuring your outdoor condenser is clear of debris. These simple steps reduce the workload on your system and lower your summer electric bills."
-        }
-    ];
 
     return (
         <div className="bg-white">
@@ -163,32 +145,11 @@ export const AirConditioner: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: FAQ SECTION */}
-            <FAQ items={acFaqs} />
-
-            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
+            {/* SECTION 4: SERVICE AREAS (Interactive Map) */}
             <ServiceAreas />
 
-            {/* BOTTOM CTA */}
-            <section className="py-24 bg-blue-50">
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-serif font-bold text-brand-navy mb-6">Ready to Beat the Humidity?</h2>
-                    <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">Get fast AC repairs or upgrade to a perfectly sized, ultra-efficient cooling system today.</p>
-
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Free Installation Estimate
-                            </button>
-                        </Link>
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                View Efficiency Rebates
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            {/* GLOBAL BOTTOM SECTIONS */}
+            <GlobalBottomSections />
         </div>
     );
 };

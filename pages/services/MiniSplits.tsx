@@ -4,27 +4,9 @@ import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Wind, ThermometerSnowflake, Wrench, MapPin, CheckCircle2, Zap, DollarSign } from 'lucide-react';
 import { ServiceAreas } from '../../components/ServiceAreas';
-import { FAQ } from '../../components/FAQ';
+import { GlobalBottomSections } from '../../components/GlobalBottomSections';
 
 export const MiniSplits: React.FC = () => {
-    const miniSplitFaqs = [
-        {
-            question: "Are mini splits good for whole-home heating and cooling in Massachusetts?",
-            answer: "Yes! Modern ductless mini splits are exceptionally efficient and provide precise 'zone control'—allowing you to heat or cool only the rooms you're using. This makes them a perfect solution for homes without existing ductwork, additions, or problematic hot/cold spots."
-        },
-        {
-            question: "How many indoor units can one outdoor unit support?",
-            answer: "Depending on the capacity of the outdoor condenser, a single multi-zone system can typically power between 2 and 8 indoor units. This allows for customized comfort across multiple bedrooms, living areas, and even home offices."
-        },
-        {
-            question: "Are there Mass Save® rebates for ductless mini splits?",
-            answer: "Absolutely. Mass Save® offers substantial rebates for high-efficiency mini split systems (especially when replacing electric baseboard or oil/propane systems). We'll help you navigate the equipment requirements to ensure your new system qualifies for the maximum incentives."
-        },
-        {
-            question: "Do mini splits require a lot of maintenance?",
-            answer: "Like any HVAC system, mini splits need annual professional maintenance. Additionally, we recommend that homeowners check and clean the reusable air filters every 1–3 months to maintain optimal airflow and indoor air quality."
-        }
-    ];
 
     return (
         <div className="bg-white">
@@ -153,32 +135,11 @@ export const MiniSplits: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: FAQ SECTION */}
-            <FAQ items={miniSplitFaqs} />
-
-            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
+            {/* SECTION 4: SERVICE AREAS (Interactive Map) */}
             <ServiceAreas />
 
-            {/* BOTTOM CTA */}
-            <section className="py-24 bg-brand-light">
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-serif font-bold text-brand-navy mb-6">Ready to Eliminate Hot Spots?</h2>
-                    <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">Skip the massive ductwork renovations and get precise localized comfort installed in just one day.</p>
-
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Free Installation Estimate
-                            </button>
-                        </Link>
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2 border border-white/20">
-                                View Efficiency Rebates
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            {/* GLOBAL BOTTOM SECTIONS */}
+            <GlobalBottomSections />
         </div>
     );
 };

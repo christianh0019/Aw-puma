@@ -4,27 +4,9 @@ import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Zap, ThermometerSnowflake, Wrench, MapPin, CheckCircle2, DollarSign } from 'lucide-react';
 import { ServiceAreas } from '../../components/ServiceAreas';
-import { FAQ } from '../../components/FAQ';
+import { GlobalBottomSections } from '../../components/GlobalBottomSections';
 
 export const HeatPump: React.FC = () => {
-    const heatPumpFaqs = [
-        {
-            question: "How does a heat pump work in cold Massachusetts winters?",
-            answer: "Modern cold-climate heat pumps are designed to extract heat from outdoor air even when temperatures drop well below zero. They use advanced variable-speed compressors and specialized refrigerants to provide reliable, consistent warmth throughout the harshest MA winters."
-        },
-        {
-            question: "Can a heat pump completely replace my existing furnace or boiler?",
-            answer: "Yes! Whole-home electric heat pump conversions are becoming the standard for energy-conscious homeowners. A properly sized system can handle all your heating and cooling needs in a single, ultra-efficient unit, eliminating the need for fossil fuels."
-        },
-        {
-            question: "What are the maximum Mass Save® rebates?",
-            answer: "Mass Save® offers up to $10,000 in incentives for qualifying homeowners who switch to a whole-home electric heat pump system. As a certified contractor, we guide you through the required home energy audit and installation process to help you secure the maximum possible rebate."
-        },
-        {
-            question: "Do heat pumps require a backup heating source?",
-            answer: "While modern units can handle extreme cold, some homeowners choose to keep their existing fossil-fuel system as a secondary 'dual-fuel' backup. However, for most well-insulated homes, a high-performance heat pump is more than capable of serving as the primary and only heat source."
-        }
-    ];
 
     return (
         <div className="bg-white">
@@ -153,32 +135,11 @@ export const HeatPump: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: FAQ SECTION */}
-            <FAQ items={heatPumpFaqs} />
-
-            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
+            {/* SECTION 4: SERVICE AREAS (Interactive Map) */}
             <ServiceAreas />
 
-            {/* BOTTOM CTA */}
-            <section className="py-24 bg-brand-light">
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-serif font-bold text-brand-navy mb-6">Ready for Zero-Emission Comfort?</h2>
-                    <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">Join the future of heating—without the stress. We handle the paperwork, you enjoy the savings.</p>
-
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Free Installation Estimate
-                            </button>
-                        </Link>
-                        <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2 border border-white/20">
-                                View Efficiency Rebates
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            {/* GLOBAL BOTTOM SECTIONS */}
+            <GlobalBottomSections />
         </div>
     );
 };

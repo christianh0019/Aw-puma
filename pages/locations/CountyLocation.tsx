@@ -4,6 +4,8 @@ import { MapPin, ArrowRight, CheckCircle2, Phone, Shield, Clock, Star } from 'lu
 import { Button } from '../../components/ui/Button';
 import { SERVICES } from '../../components/Navbar';
 import { SEO } from '../../components/SEO';
+import { ServiceAreas } from '../../components/ServiceAreas';
+import { GlobalBottomSections } from '../../components/GlobalBottomSections';
 
 // County data with descriptions and details
 export const COUNTY_DATA: Record<string, {
@@ -250,29 +252,11 @@ export const CountyLocation: React.FC = () => {
                 </div>
             </section>
 
-            {/* Final CTA */}
-            <section className="py-20 bg-brand-navy text-center">
-                <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-5">
-                        Need Service in {data.name} County?
-                    </h2>
-                    <p className="text-gray-300 text-lg mb-8">
-                        Call or book online — we'll have a licensed technician at your door same-day.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link to="/contact">
-                            <Button size="lg" variant="primary" icon={<ArrowRight size={18} />}>
-                                Get a Free Quote
-                            </Button>
-                        </Link>
-                        <a href="tel:6176183366">
-                            <Button size="lg" variant="outline" icon={<Phone size={18} />} className="border-white text-white hover:bg-white/10">
-                                (617) 618-3366
-                            </Button>
-                        </a>
-                    </div>
-                </div>
-            </section>
+            {/* Service Map Component */}
+            <ServiceAreas />
+
+            {/* GLOBAL BOTTOM SECTIONS */}
+            <GlobalBottomSections />
         </div>
     );
 };
