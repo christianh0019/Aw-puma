@@ -20,12 +20,14 @@ import { Blog } from './pages/Blog';
 import { BlogPost } from './pages/BlogPost';
 import { MassSave } from './pages/MassSave';
 import { ScrollToTop } from './components/ScrollToTop';
+import { OfferPopup } from './components/OfferPopup';
 
 const App: React.FC = () => {
   return (
     <Router>
       <div className="min-h-screen bg-white text-slate-800 font-sans">
         <ScrollToTop />
+        <OfferPopup />
         <Navbar />
         <main>
           <Routes>
